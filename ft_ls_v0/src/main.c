@@ -50,12 +50,13 @@ t_handler* init_handler(const int size, const char** dirs, const t_exec exec) {
 ///this function needs to be well thought out
 
 ///opening and closing of dir is happening here
-void output_content(const char* dir_name) {
+void output_content(t_handler* handler, const char* dir_name, const int dirs_size) {
 	DIR* dir_ptr = opendir(dir_name);
 
 	if (dir_ptr == NULL)
 		finish_him();
-
+	if (dirs_size > 1)
+		ft_printf("%s:\n", dir_name);
 	t_dirent* dir_data;
 	while ((dir_data = readdir(dir_ptr)) != NULL)
 		///bad output
@@ -68,16 +69,11 @@ void output_content(const char* dir_name) {
 void read_dirs(t_handler* handler) {
 	register int i;
 
-	///think it is a poor design :)) but we will figure something out
-	if (handler->dir_vec->length == 1) {
-		output_content(handler->dir_vec->data[0]);
-	} else {
-		i = 0;
-		while (i < handler->dir_vec->length) {
-			ft_printf("%s:\n", handler->dir_vec->data[i]);
-			output_content(handler->dir_vec->data[i]);
-			++i;
-		}
+	i = 0;
+	///slightly better
+	while (i < handler->dir_vec->length) {
+		output_content(handler, handler->dir_vec->data[i], handler->dir_vec->length);
+		++i;
 	}
 }
 
