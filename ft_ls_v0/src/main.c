@@ -34,7 +34,7 @@ t_handler* init_handler(const int size, const char** dirs, const t_exec exec) {
 		ft_memdel((void**)&handler);
 		finish_him();
 	}
-	i = 0;
+	i = 1;
 	if (exec == DIRS_IN_ARGS)
 		while (i < size) {
 			dir_push_wrapper(handler, dirs[i]);
@@ -76,6 +76,7 @@ void read_dirs(t_handler* handler) {
 		while (i < handler->dir_vec->length) {
 			ft_printf("%s:\n", handler->dir_vec->data[i]);
 			output_content(handler->dir_vec->data[i]);
+			++i;
 		}
 	}
 }
