@@ -1,2 +1,2 @@
 # ft_ls
-School 21 (42) project. Implementation bash ls function.
+Version 0 without any flags
