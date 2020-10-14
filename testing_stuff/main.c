@@ -7,7 +7,7 @@
 
 typedef struct dirent t_dirent;
 
-void finish_him(const int __errno, int line) {
+void finish_him(int line) {
 	printf("line: %d errno: %d: %s\n", line, errno, strerror(errno));
 	exit(0);
 }
@@ -48,7 +48,7 @@ int main(int argc, char **argv)
 
 	dir = opendir(argv[1]);
 	if (dir == NULL)
-		finish_him(errno, __LINE__);
+		finish_him(__LINE__);
 
 	t_dirent* rd_dir;
 
@@ -61,7 +61,7 @@ int main(int argc, char **argv)
 		print_dirent(rd_dir);
 
 	if (closedir(dir) == - 1)
-		finish_him(errno, __LINE__);
+		finish_him(__LINE__);
 
 	return 0;
 }
