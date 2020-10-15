@@ -31,3 +31,8 @@ len one raw equel $COLUMNS
 if (len > $COLUMNS)
     number_raw = int($COLUMNS / len)
 ```
+
+## Ideas
+* Should be supported maximum lenth of the file  // O(1) for the future search for the maximum
+    field in general struct
+* Count file lenth // field in t_node struct
