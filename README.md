@@ -29,5 +29,5 @@ int main (int argc, char **argv)
 len one raw equel $COLUMNS\
 ```
 if (len > $COLUMNS)
-    number_raw = $COLUMNS // len
+    number_raw = int($COLUMNS / len)
 ```
