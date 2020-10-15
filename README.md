@@ -33,6 +33,6 @@ if (len > $COLUMNS)
 ```
 
 ## Ideas
-* Should be supported maximum lenth of the file  // O(1) for the future search for the maximum
+* Should be supported maximum lenth of the file  // O(1) for the future search  maximum\
     field in general struct
 * Count file lenth // field in t_node struct
