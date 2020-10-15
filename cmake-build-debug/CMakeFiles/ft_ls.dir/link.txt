@@ -1,0 +1,1 @@
+/usr/bin/gcc-9 -g   CMakeFiles/ft_ls.dir/ft_ls_v0/src/main.c.o  -o ft_ls  ../ft_ls_v0/libft/libft.a 

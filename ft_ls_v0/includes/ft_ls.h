@@ -29,6 +29,15 @@ typedef enum e_exec {
 
 ///will need macros for convenient access to the fields of structs (mb)
 
+/**
+ * node struct that will contain all info needed for the output and sorting
+ */
+
+typedef struct s_node {
+	int mode;
+	char* name;
+} 			   t_node;
+
 typedef struct s_handler {
 	t_pvec* dir_vec;
 	t_dirent* read_ptr;
