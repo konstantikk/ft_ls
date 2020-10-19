@@ -9,6 +9,7 @@
 #include <time.h>
 #include <pwd.h>
 #include <grp.h>
+#include <sys/xattr.h>
 
 
 typedef struct dirent t_dirent;
@@ -80,6 +81,16 @@ void get_and_print_stat(const char* path_name) {
 }
 
 
+void try_listxattr(const char* path_name) {
+	char list[256];
+
+	ssize_t ret_val = listxattr(path_name, (char *) &list, 256);
+
+
+	printf("ret_val of listxattr: %lu\n", ret_val);
+
+}
+
 
 int main(int argc, char **argv)
 {
@@ -100,6 +111,7 @@ int main(int argc, char **argv)
 	//if (rd_dir == NULL)
 	//	finish_him(errno, __LINE__);
 
+	try_listxattr(argv[1]);
 	while ((rd_dir = readdir(dir)) != NULL) {
 		print_dirent(rd_dir);
 		get_and_print_stat(rd_dir->d_name);

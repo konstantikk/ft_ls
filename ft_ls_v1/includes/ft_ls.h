@@ -10,11 +10,28 @@
 #include <errno.h>
 #include <stdio.h>
 #include <time.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <pwd.h>
+#include <grp.h>
 
 ///define current dir
 #define CURRENT_DIR "."
 
+#define MAX_TYPES_NUM DT_SOCK + 1
+#define PERMISSION_FIELDS_NUM 9
+#define USERS_COUNT 3
+#define ONE_USER_MASK 0x7u
+#define ONE_USER_SHIFT 3u
+
+#define READ 'r'
+#define WRITE 'w'
+#define EXECUTE 'x'
+#define NONE '-'
+
+
 typedef struct dirent t_dirent;
+typedef struct stat	  t_stat;
 
 ///in case we will need more execution enums to make our lives easier
 typedef enum e_exec {
@@ -36,11 +53,14 @@ typedef enum e_exec {
 typedef struct s_node {
 	int mode;
 	char* name;
+
 } 			   t_node;
 
 typedef struct s_handler {
 	t_pvec* dir_vec;
 	t_dirent* read_ptr;
 } 				t_handler;
+
+void print_node(const t_dirent* dir);
 
 #endif //FT_LS_FT_LS_H

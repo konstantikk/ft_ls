@@ -60,7 +60,8 @@ void output_content(t_handler* handler, const char* dir_name, const int dirs_siz
 	t_dirent* dir_data;
 	while ((dir_data = readdir(dir_ptr)) != NULL)
 		///bad output
-		ft_printf("%s ", dir_data->d_name);
+		//ft_printf("%s ", dir_data->d_name);
+		print_node(dir_data);
 	ft_putchar('\n');
 	if (closedir(dir_ptr) == -1)
 		finish_him();

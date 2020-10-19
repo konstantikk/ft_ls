@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ft_ls.dir/ft_ls_v0/src/main.c.o"
+  "CMakeFiles/ft_ls.dir/ft_ls_v1/src/main.c.o"
+  "CMakeFiles/ft_ls.dir/ft_ls_v1/src/print.c.o"
   "ft_ls"
   "ft_ls.pdb"
 )

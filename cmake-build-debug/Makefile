@@ -76,17 +76,6 @@ CMAKE_BINARY_DIR = /home/professor/ft_ls/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/professor/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -97,6 +86,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/professor/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -143,32 +143,99 @@ ft_ls/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/build
 .PHONY : ft_ls/fast
 
-ft_ls_v0/src/main.o: ft_ls_v0/src/main.c.o
+#=============================================================================
+# Target rules for targets named tests
 
-.PHONY : ft_ls_v0/src/main.o
+# Build rule for target.
+tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
+
+# fast build rule for target.
+tests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
+
+ft_ls_v1/src/main.o: ft_ls_v1/src/main.c.o
+
+.PHONY : ft_ls_v1/src/main.o
 
 # target to build an object file
-ft_ls_v0/src/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/ft_ls_v0/src/main.c.o
-.PHONY : ft_ls_v0/src/main.c.o
+ft_ls_v1/src/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/ft_ls_v1/src/main.c.o
+.PHONY : ft_ls_v1/src/main.c.o
 
-ft_ls_v0/src/main.i: ft_ls_v0/src/main.c.i
+ft_ls_v1/src/main.i: ft_ls_v1/src/main.c.i
 
-.PHONY : ft_ls_v0/src/main.i
+.PHONY : ft_ls_v1/src/main.i
 
 # target to preprocess a source file
-ft_ls_v0/src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/ft_ls_v0/src/main.c.i
-.PHONY : ft_ls_v0/src/main.c.i
+ft_ls_v1/src/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/ft_ls_v1/src/main.c.i
+.PHONY : ft_ls_v1/src/main.c.i
 
-ft_ls_v0/src/main.s: ft_ls_v0/src/main.c.s
+ft_ls_v1/src/main.s: ft_ls_v1/src/main.c.s
 
-.PHONY : ft_ls_v0/src/main.s
+.PHONY : ft_ls_v1/src/main.s
 
 # target to generate assembly for a file
-ft_ls_v0/src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/ft_ls_v0/src/main.c.s
-.PHONY : ft_ls_v0/src/main.c.s
+ft_ls_v1/src/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/ft_ls_v1/src/main.c.s
+.PHONY : ft_ls_v1/src/main.c.s
+
+ft_ls_v1/src/print.o: ft_ls_v1/src/print.c.o
+
+.PHONY : ft_ls_v1/src/print.o
+
+# target to build an object file
+ft_ls_v1/src/print.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/ft_ls_v1/src/print.c.o
+.PHONY : ft_ls_v1/src/print.c.o
+
+ft_ls_v1/src/print.i: ft_ls_v1/src/print.c.i
+
+.PHONY : ft_ls_v1/src/print.i
+
+# target to preprocess a source file
+ft_ls_v1/src/print.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/ft_ls_v1/src/print.c.i
+.PHONY : ft_ls_v1/src/print.c.i
+
+ft_ls_v1/src/print.s: ft_ls_v1/src/print.c.s
+
+.PHONY : ft_ls_v1/src/print.s
+
+# target to generate assembly for a file
+ft_ls_v1/src/print.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/ft_ls_v1/src/print.c.s
+.PHONY : ft_ls_v1/src/print.c.s
+
+testing_stuff/main.o: testing_stuff/main.c.o
+
+.PHONY : testing_stuff/main.o
+
+# target to build an object file
+testing_stuff/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/testing_stuff/main.c.o
+.PHONY : testing_stuff/main.c.o
+
+testing_stuff/main.i: testing_stuff/main.c.i
+
+.PHONY : testing_stuff/main.i
+
+# target to preprocess a source file
+testing_stuff/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/testing_stuff/main.c.i
+.PHONY : testing_stuff/main.c.i
+
+testing_stuff/main.s: testing_stuff/main.c.s
+
+.PHONY : testing_stuff/main.s
+
+# target to generate assembly for a file
+testing_stuff/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/testing_stuff/main.c.s
+.PHONY : testing_stuff/main.c.s
 
 # Help Target
 help:
@@ -179,9 +246,16 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ft_ls"
-	@echo "... ft_ls_v0/src/main.o"
-	@echo "... ft_ls_v0/src/main.i"
-	@echo "... ft_ls_v0/src/main.s"
+	@echo "... tests"
+	@echo "... ft_ls_v1/src/main.o"
+	@echo "... ft_ls_v1/src/main.i"
+	@echo "... ft_ls_v1/src/main.s"
+	@echo "... ft_ls_v1/src/print.o"
+	@echo "... ft_ls_v1/src/print.i"
+	@echo "... ft_ls_v1/src/print.s"
+	@echo "... testing_stuff/main.o"
+	@echo "... testing_stuff/main.i"
+	@echo "... testing_stuff/main.s"
 .PHONY : help
 
 

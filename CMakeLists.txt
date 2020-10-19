@@ -3,9 +3,11 @@ project(ft_ls C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(ft_ls ./ft_ls_v0/src/main.c)
+add_executable(tests ./testing_stuff/main.c)
 
-target_include_directories(ft_ls PUBLIC ./ft_ls_v0/libft/includes)
-target_include_directories(ft_ls PUBLIC ./ft_ls_v0/includes)
+add_executable(ft_ls ./ft_ls_v1/src/main.c ft_ls_v1/src/print.c)
 
-target_link_libraries(ft_ls /home/professor/ft_ls/ft_ls_v0/libft/libft.a)
+target_include_directories(ft_ls PUBLIC ./ft_ls_v1/libft/includes)
+target_include_directories(ft_ls PUBLIC ./ft_ls_v1/includes)
+
+target_link_libraries(ft_ls /home/professor/ft_ls/ft_ls_v1/libft/libft.a)

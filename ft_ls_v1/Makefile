@@ -1,8 +1,8 @@
 COMPILER = gcc
 CHECK_FLAGS = -Wall -Wextra #-Werror
-NAME = ft_ls_v0
+NAME = ft_ls_v1
 ADD_SRC = ./src/
-RESOURCES = main.c
+RESOURCES = main.c print.c
 SRC_S = $(addprefix $(ADD_SRC), $(RESOURCES))
 OBJ = $(SRC_S:.c=.o)
 ADD_INC = ./includes/

@@ -4,15 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/professor/ft_ls/ft_ls_v1/src/main.c" "/home/professor/ft_ls/cmake-build-debug/CMakeFiles/ft_ls.dir/ft_ls_v1/src/main.c.o"
-  "/home/professor/ft_ls/ft_ls_v1/src/print.c" "/home/professor/ft_ls/cmake-build-debug/CMakeFiles/ft_ls.dir/ft_ls_v1/src/print.c.o"
+  "/home/professor/ft_ls/testing_stuff/main.c" "/home/professor/ft_ls/cmake-build-debug/CMakeFiles/tests.dir/testing_stuff/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
-  ".././ft_ls_v1/libft/includes"
-  ".././ft_ls_v1/includes"
   )
 
 # Targets to which this target links.

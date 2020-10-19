@@ -74,6 +74,7 @@ CMAKE_BINARY_DIR = /home/professor/ft_ls/cmake-build-debug
 
 # The main recursive "all" target.
 all: CMakeFiles/ft_ls.dir/all
+all: CMakeFiles/tests.dir/all
 
 .PHONY : all
 
@@ -84,6 +85,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/ft_ls.dir/clean
+clean: CMakeFiles/tests.dir/clean
 
 .PHONY : clean
 
@@ -94,12 +96,12 @@ clean: CMakeFiles/ft_ls.dir/clean
 CMakeFiles/ft_ls.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/professor/ft_ls/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target ft_ls"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/professor/ft_ls/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target ft_ls"
 .PHONY : CMakeFiles/ft_ls.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ft_ls.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/professor/ft_ls/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/professor/ft_ls/cmake-build-debug/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ft_ls.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/professor/ft_ls/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/ft_ls.dir/rule
@@ -113,6 +115,33 @@ ft_ls: CMakeFiles/ft_ls.dir/rule
 CMakeFiles/ft_ls.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_ls.dir/build.make CMakeFiles/ft_ls.dir/clean
 .PHONY : CMakeFiles/ft_ls.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tests.dir
+
+# All Build rule for target.
+CMakeFiles/tests.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/professor/ft_ls/cmake-build-debug/CMakeFiles --progress-num=4,5 "Built target tests"
+.PHONY : CMakeFiles/tests.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/professor/ft_ls/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/professor/ft_ls/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/tests.dir/rule
+
+# Convenience name for target.
+tests: CMakeFiles/tests.dir/rule
+
+.PHONY : tests
+
+# clean rule for target.
+CMakeFiles/tests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/clean
+.PHONY : CMakeFiles/tests.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
