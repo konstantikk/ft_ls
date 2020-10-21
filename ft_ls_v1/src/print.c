@@ -57,6 +57,14 @@ char* print_permissions(mode_t st_mode) {
 	return permissions;
 }
 
+char* print_time(const time_t *time) {
+	char *str_time;
+
+	str_time = ctime(time);
+	str_time[ft_strlen(str_time) - NO_NEWLINE_AND_SECS] = '\0';
+	return str_time;
+}
+
 void print_node(const t_dirent* dir) {
 	t_stat st;
 
@@ -67,6 +75,6 @@ void print_node(const t_dirent* dir) {
 		   					 getpwuid(st.st_uid)->pw_name,
 		   					 getgrgid(st.st_gid)->gr_name,
 		   					 st.st_size,
-		   					 ctime(&st.st_mtim.tv_sec),
+		   					 print_time(&st.st_mtim.tv_sec),
 		   					 dir->d_name);
 }

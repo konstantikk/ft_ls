@@ -23,6 +23,7 @@
 #define USERS_COUNT 3
 #define ONE_USER_MASK 0x7u
 #define ONE_USER_SHIFT 3u
+#define NO_NEWLINE_AND_SECS 9
 
 #define READ 'r'
 #define WRITE 'w'
@@ -50,10 +51,29 @@ typedef enum e_exec {
  * node struct that will contain all info needed for the output and sorting
  */
 
-typedef struct s_node {
-	int mode;
-	char* name;
 
+/**
+ *  node struct will have these fields:
+ *  d_type
+ *  st_mode
+ *  st_nlink
+ *  st_uid
+ *  st_gid
+ *  st_size
+ *  st_mtim.tv_sec
+ *  d_name
+ *  maybe we will need more fields but that is enough to implement  -l flag
+ *  also we will need block size for each file, gonna add soon this
+ *
+ *  prefix d - means the values has come from readdir
+ *  prefix st means the values has come from stat
+ *
+ *  maybe we should just make struct wrapper around t_dirent and stat
+ */
+
+typedef struct s_node {
+	t_dirent* d;
+	t_stat* st;
 } 			   t_node;
 
 typedef struct s_handler {
