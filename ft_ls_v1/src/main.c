@@ -14,7 +14,7 @@ void finish_him() {
 ///we will probably need to save the names of directories not the ptrs to them (!!!(fixed))
 
 void dir_push_wrapper(t_handler* handler, const char* dir) {
-	if (ft_ptr_vec_pushback(handler->dir_vec, (void*)dir) == -1)
+	if (ft_ptr_vec_pushback(handler->nodes, (void*)dir) == -1)
 		///freshers
 		finish_him();
 }
@@ -30,11 +30,11 @@ t_handler* init_handler(const int size, const char** dirs, const t_exec exec) {
 	if ((handler = (t_handler*)ft_memalloc(sizeof(t_handler))) == NULL)
 		finish_him();
 
-	if ((handler->dir_vec = ft_ptr_vec_init()) == NULL) {
+	if ((handler->nodes = ft_ptr_vec_init()) == NULL) {
 		ft_memdel((void**)&handler);
 		finish_him();
 	}
-	i = 1;
+	/*i = 1;
 	if (exec == DIRS_IN_ARGS)
 		while (i < size) {
 			dir_push_wrapper(handler, dirs[i]);
@@ -42,7 +42,7 @@ t_handler* init_handler(const int size, const char** dirs, const t_exec exec) {
 		}
 	else if (exec == NO_DIRS_IN_ARGS)
 		dir_push_wrapper(handler, CURRENT_DIR);
-
+*/
 	return handler;
 }
 
@@ -72,8 +72,8 @@ void read_dirs(t_handler* handler) {
 
 	i = 0;
 	///slightly better
-	while (i < handler->dir_vec->length) {
-		output_content(handler, handler->dir_vec->data[i], handler->dir_vec->length);
+	while (i < handler->nodes->length) {
+		output_content(handler, handler->nodes->data[i], handler->nodes->length);
 		++i;
 	}
 }
@@ -89,7 +89,8 @@ int main(int argc, char** argv) {
 	///argv will be changed for array of actual dir names
 	handler = init_handler(argc, (const char**)argv,
 						argc == 1? NO_DIRS_IN_ARGS : DIRS_IN_ARGS);
-	read_dirs(handler);
+	parse_all(argc, argv, handler);
+	///read_dirs(handler);
 
 	///display_content();
 	///free_data();

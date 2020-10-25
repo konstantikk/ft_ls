@@ -56,6 +56,8 @@ RESOURCES = $(addprefix ./str_funcs/, ft_putchar.c \
 	ft_isprint.c \
 	ft_tolower.c \
 	ft_toupper.c \
+	ft_islower.c \
+	ft_isupper.c \
 	ft_isspace.c ) \
 	$(addprefix ./digit_funcs/, ft_itoa.c \
 	ft_abs.c) \

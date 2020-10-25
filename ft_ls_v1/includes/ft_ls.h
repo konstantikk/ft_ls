@@ -25,11 +25,15 @@
 #define ONE_USER_SHIFT 3u
 #define NO_NEWLINE_AND_SECS 9
 
+
 #define READ 'r'
 #define WRITE 'w'
 #define EXECUTE 'x'
 #define NONE '-'
 
+
+///macroses to access flags
+#define ALPHABET_SIZE 26
 
 typedef struct dirent t_dirent;
 typedef struct stat	  t_stat;
@@ -76,11 +80,19 @@ typedef struct s_node {
 	t_stat* st;
 } 			   t_node;
 
+/**current flags map
+ * 							  76543210
+ * 00000000 00000000 00000000 00000000
+ * 								taRrl
+ * 	update after each added flag!!!!!
+ */
+
+
 typedef struct s_handler {
-	t_pvec* dir_vec;
-	t_dirent* read_ptr;
+	t_pvec* nodes;
+	unsigned int flags;
 } 				t_handler;
 
 void print_node(const t_dirent* dir);
-
+void parse_all(int argc, char** argv, t_handler *handler);
 #endif //FT_LS_FT_LS_H
