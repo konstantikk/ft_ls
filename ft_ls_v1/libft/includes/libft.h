@@ -97,6 +97,8 @@ int					ft_isprint(int c);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
 int					ft_isspace(int c);
+int 				ft_islower(int c);
+int 				ft_isupper(int c);
 
 void				*ft_memalloc(size_t size);
 void				ft_memdel(void **ap);
