@@ -17,6 +17,8 @@
 
 ///define current dir
 #define CURRENT_DIR "."
+///define current node
+#define CURRENT_NODE  ((t_node*)handler->processed_nodes->data[handler->processed_nodes->length - 1])
 
 #define MAX_TYPES_NUM DT_SOCK + 1
 #define PERMISSION_FIELDS_NUM 9
@@ -76,8 +78,16 @@ typedef enum e_exec {
  */
 
 typedef struct s_node {
-	t_dirent* d;
-	t_stat* st;
+	//t_dirent
+	char d_name[256];
+	unsigned char d_type;
+	//t_stat
+	__mode_t st_mode;
+	__nlink_t st_nlink;
+	__uid_t st_uid;
+	__gid_t st_gid;
+	__off_t st_size;
+	struct timespec st_mtim;
 } 			   t_node;
 
 /**current flags map
@@ -87,12 +97,25 @@ typedef struct s_node {
  * 	update after each added flag!!!!!
  */
 
+#define LIST 0x2u
+#define REVERSE_SORT 0x4u
+#define RECURSIVE 0x8u
+#define ALL_NODES 0x10u
+#define TIME_SORT 0x20u
+
+/**
+ * input_nodes will be a vector of char* of nodes the came from the input
+ * processed_nodes will be ready to print structures with all necessary data
+ */
 
 typedef struct s_handler {
-	t_pvec* nodes;
+	t_pvec* input_nodes;
+	t_pvec* processed_nodes;
 	unsigned int flags;
 } 				t_handler;
 
 void print_node(const t_dirent* dir);
-void parse_all(int argc, char** argv, t_handler *handler);
+void parse_input(int argc, char** argv, t_handler *handler);
+void read_nodes(t_handler *handler);
+void finish_him();
 #endif //FT_LS_FT_LS_H

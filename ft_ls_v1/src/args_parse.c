@@ -63,10 +63,10 @@ static void parse_flags(char* argv, size_t size, t_handler* handler) {
 
 static void debug_parser(t_handler* handler) {
 	printf("nodes parsed: {\n");
-	for (int i = 0; i < handler->nodes->length; ++i) {
-		printf("\t%s\n", handler->nodes->data[i]);
+	for (int i = 0; i < handler->input_nodes->length; ++i) {
+		printf("\t%s\n", handler->input_nodes->data[i]);
 	}
-	printf("total nodes parsed: %lu\n}\n", handler->nodes->length);
+	printf("total nodes parsed: %lu\n}\n", handler->input_nodes->length);
 
 	printf("flags parsed: {\n");
 	int counter = 0;
@@ -86,7 +86,7 @@ static void debug_parser(t_handler* handler) {
 	printf("total flags parsed: %d\n}\n", counter);
 }
 
-void parse_all(int argc, char** argv, t_handler *handler) {
+void parse_input(int argc, char** argv, t_handler *handler) {
 	register int i;
 	size_t size;
 	///skip first arg because it is the program name
@@ -97,12 +97,12 @@ void parse_all(int argc, char** argv, t_handler *handler) {
 		if (argv[i][0] == '-' && size != 1)
 			parse_flags(argv[i], size, handler);
 		else
-			ft_ptr_vec_pushback(handler->nodes, argv[i]);
+			ft_ptr_vec_pushback(handler->input_nodes, argv[i]);
 		++i;
 	}
 	///if we dont have nodes in args
-	if (handler->nodes->length == 0)
-		ft_ptr_vec_pushback(handler->nodes, CURRENT_DIR);
+	if (handler->input_nodes->length == 0)
+		ft_ptr_vec_pushback(handler->input_nodes, CURRENT_DIR);
 
-//	debug_parser(handler);
+	debug_parser(handler);
 }
