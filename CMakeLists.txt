@@ -5,7 +5,7 @@ set(CMAKE_C_STANDARD 99)
 
 add_executable(tests ./testing_stuff/main.c)
 
-add_executable(ft_ls ./ft_ls_v1/src/main.c ft_ls_v1/src/print.c)
+add_executable(ft_ls ./ft_ls_v1/src/main.c ft_ls_v1/src/print_nodes.c ft_ls_v1/src/read_nodes.c)
 
 target_include_directories(ft_ls PUBLIC ./ft_ls_v1/libft/includes)
 target_include_directories(ft_ls PUBLIC ./ft_ls_v1/includes)

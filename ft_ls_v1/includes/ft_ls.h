@@ -5,6 +5,12 @@
 #ifndef FT_LS_FT_LS_H
 #define FT_LS_FT_LS_H
 
+#if defined(__APPLE__) || defined(__NetBSD__)
+#define st_atim st_atimespec
+#define st_ctim st_ctimespec
+#define st_mtim st_mtimespec
+#endif
+
 #include "libft.h"
 #include <dirent.h>
 #include <errno.h>
