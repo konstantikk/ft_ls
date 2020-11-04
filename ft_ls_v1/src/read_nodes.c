@@ -48,6 +48,7 @@ void debug_read_nodes(t_handler* handler, t_pvec* processed_nodes) {
  * issues we are facing:
  *  	1) output name of the directory that we are parsing then the content of it
  *  	2) path creation should be rewritten
+ *  	3) 1 node -> no name in header, name in header - need to implement
  *  	WIP
  */
 
@@ -60,7 +61,12 @@ void read_nodes(t_handler* handler) {
 	///todo: also handle symbolic links
 	while (i < handler->input_nodes->length) {
 		///R l a t
+		/**
+		 * if it is a file-> 1 way -> get_file = {readlink{name}, s_nodes* == NULL},
+		 * if it is a dir -> 2 way -> get dir = {readlink{name}, s_nodes*, total} -> sort(dir)
+		 */
 		ptr = opendir(handler->input_nodes->data[i]);
+
 		if (ptr == NULL)
 			finish_him();
 		while ((node_content = readdir(ptr)) != NULL) {
@@ -89,6 +95,7 @@ void read_nodes(t_handler* handler) {
 				ft_ptr_vec_pushback(handler->input_nodes, ft_strjoin(path, node_content->d_name));
 			}
 		}
+		///sort dir??
 		if (closedir(ptr) == -1)
 			finish_him();
 		++i;

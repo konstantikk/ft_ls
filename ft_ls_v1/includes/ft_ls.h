@@ -78,10 +78,17 @@ typedef enum e_exec {
  */
 
 typedef struct s_node {
-	//t_dirent
+	///global fields
+	///s_node
+	t_pvec* nodes;
+	size_t total;
+	///char path[256]; ??
+
+	///t_dirent
 	char d_name[256];
 	unsigned char d_type;
-	//t_stat
+
+	///t_stat
 	__mode_t st_mode;
 	__nlink_t st_nlink;
 	__uid_t st_uid;
@@ -89,6 +96,10 @@ typedef struct s_node {
 	__off_t st_size;
 	struct timespec st_mtim;
 } 			   t_node;
+
+typedef struct  s_dir {
+	///s_node vector
+}				t_dir;
 
 /**current flags map
  * 							  76543210
