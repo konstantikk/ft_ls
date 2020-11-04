@@ -23,8 +23,12 @@
 
 ///define current dir
 #define CURRENT_DIR "."
-///define current node
-#define CURRENT_NODE  ((t_node*)handler->processed_nodes->data[handler->processed_nodes->length - 1])
+///define NODE macro might need to specify where from to take an elem
+///further expand
+#define NODE(vec,idx)  ((t_node*)((vec)->data[idx]))
+#define CURRENT_NODE ((t_node*)(dir->nodes->data[dir->nodes->length - 1]))
+
+#define MAX_FILENAME_SIZE 256
 
 #define MAX_TYPES_NUM DT_SOCK + 1
 #define PERMISSION_FIELDS_NUM 9
@@ -91,15 +95,16 @@ typedef struct s_node {
 	///char path[256]; ??
 
 	///t_dirent
-	char d_name[256];
+	char d_name[MAX_FILENAME_SIZE];
 	unsigned char d_type;
-
 	///t_stat
 	__mode_t st_mode;
 	__nlink_t st_nlink;
 	__uid_t st_uid;
 	__gid_t st_gid;
 	__off_t st_size;
+	__blkcnt_t st_blocks;
+	__blksize_t st_blksize;
 	struct timespec st_mtim;
 } 			   t_node;
 
@@ -134,5 +139,9 @@ typedef struct s_handler {
 void print_node(const t_dirent* dir);
 void parse_input(int argc, char** argv, t_handler *handler);
 void read_nodes(t_handler *handler);
+void copy_info(t_node* node, t_stat* st);
+void get_node_info(t_node* node);
+t_node* init_node(const char* node_name, unsigned char d_type);
+t_node* init_node_and_get_info(const char* node_name, unsigned char d_type);
 void finish_him();
 #endif //FT_LS_FT_LS_H

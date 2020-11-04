@@ -1,0 +1,4939 @@
+total directories processed: 15
+
+DIR
+{
+	t_dirent part:
+	d_name: libft
+}{
+	t_stat part:
+	st_mode: 16877
+	st_nlink: 13
+	st_uid: 1000
+	st_gid: 1000
+	st_size: 4096
+	st_blksize: 4096
+	st_blocks: 8
+	st_total: 1548042404962080
+	st_mtim.tv_sec: 1604521235
+}
+}
+
+CONTENT
+total nodes in dir: 13
+{
+	t_dirent part:
+	d_name: vector
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820128672
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: includes
+}{
+	t_stat part:
+	st_mode: 16893
+	st_nlink: 2
+	st_uid: 1000
+	st_gid: 1000
+	st_size: 4096
+	st_blksize: 4096
+	st_blocks: 8
+	st_total: 0
+	st_mtim.tv_sec: 1604524439
+}
+}
+
+{
+	t_dirent part:
+	d_name: str_funcs
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820131168
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: char_funcs
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820132416
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: lst_funcs
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820133664
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: Makefile
+}{
+	t_stat part:
+	st_mode: 33204
+	st_nlink: 1
+	st_uid: 1000
+	st_gid: 1000
+	st_size: 677
+	st_blksize: 4096
+	st_blocks: 8
+	st_total: 0
+	st_mtim.tv_sec: 1604521224
+}
+}
+
+{
+	t_dirent part:
+	d_name: libft.a
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820136128
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: useful_funcs
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820137344
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: digit_funcs
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820138592
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: vec_funcs
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820139840
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: hashtable
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820141088
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_printf
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820142336
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: mem_funcs
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820143584
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+
+
+DIR
+{
+	t_dirent part:
+	d_name: libft/vector
+}{
+	t_stat part:
+	st_mode: 16877
+	st_nlink: 2
+	st_uid: 1000
+	st_gid: 1000
+	st_size: 4096
+	st_blksize: 4096
+	st_blocks: 8
+	st_total: 1688773532685888
+	st_mtim.tv_sec: 1604521234
+}
+}
+
+CONTENT
+total nodes in dir: 12
+{
+	t_dirent part:
+	d_name: ft_vnew.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820146048
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_vadd.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820147264
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_vresize.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820148480
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_vdel.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820149696
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_vreset.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820150912
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_vnew.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820152128
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_vprint.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820153344
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_vadd.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820154560
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_vresize.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820155776
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_vdel.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820156992
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_vprint.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820158208
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_vreset.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820159424
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+
+
+DIR
+{
+	t_dirent part:
+	d_name: libft/includes
+}{
+	t_stat part:
+	st_mode: 16893
+	st_nlink: 2
+	st_uid: 1000
+	st_gid: 1000
+	st_size: 4096
+	st_blksize: 4096
+	st_blocks: 8
+	st_total: 703655638619120
+	st_mtim.tv_sec: 1603639300
+}
+}
+
+CONTENT
+total nodes in dir: 5
+{
+	t_dirent part:
+	d_name: get_next_line.h
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820161856
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: float.h
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820163072
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: libft.h
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820164288
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_printf.h
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820165504
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: vector.h
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820166720
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+
+
+DIR
+{
+	t_dirent part:
+	d_name: libft/str_funcs
+}{
+	t_stat part:
+	st_mode: 16877
+	st_nlink: 2
+	st_uid: 1000
+	st_gid: 1000
+	st_size: 4096
+	st_blksize: 4096
+	st_blocks: 8
+	st_total: 10132641196115328
+	st_mtim.tv_sec: 1604521233
+}
+}
+
+CONTENT
+total nodes in dir: 72
+{
+	t_dirent part:
+	d_name: ft_strcmp.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820169152
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strnew.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820170368
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strclr.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820171584
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strmapi.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820172800
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strlen.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820174016
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_putendl.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820175232
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_putchar.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820176448
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strjoin.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820177664
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strnequ.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820178880
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strcat.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820180096
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_atoi.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820181312
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strncat.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820182528
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strncpy.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820183744
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strnstr.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820184960
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_striter.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820186176
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_atoi.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820187392
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strmapi.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820188608
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strtrim.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820189824
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strstr.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820191040
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strlcat.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820192256
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strdup.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820193472
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_striteri.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820194688
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_putstr_fd.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820195904
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_putchar_fd.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820197120
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strmap.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820198336
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strequ.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820199552
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strchr.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820200768
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_putendl_fd.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820201984
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strlcat.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820203200
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strsplit.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820204416
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strrchr.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820205632
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strnequ.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820206848
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strnstr.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820208064
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strstr.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820209280
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_putendl.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820210496
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strdel.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820211712
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strlen.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820212928
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strtrim.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820214144
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strchr.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820215360
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strmap.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820216576
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_putnbr.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820217792
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strrchr.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820219008
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_putstr.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820220224
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_putendl_fd.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820221440
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strsub.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820222656
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_putnbr_fd.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820223872
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strjoin.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820225088
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_striteri.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820226304
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_putnbr_fd.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820227520
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strcpy.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820228736
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strncat.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820229952
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strcpy.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820231168
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_atoi_base.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820232384
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_putchar.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820233600
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_putstr.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820234816
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strncmp.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820236032
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strdel.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820237248
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strcat.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820238464
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_putstr_fd.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820239680
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strncmp.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820240896
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strequ.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820242112
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_atoi_base.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820243328
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strsub.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820244544
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strncpy.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820245760
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strdup.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820246976
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strcmp.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820248192
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strsplit.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820249408
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_putnbr.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820250624
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_striter.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820251840
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strclr.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820253056
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_strnew.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820254272
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_putchar_fd.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820255488
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+
+
+DIR
+{
+	t_dirent part:
+	d_name: libft/char_funcs
+}{
+	t_stat part:
+	st_mode: 16877
+	st_nlink: 2
+	st_uid: 1000
+	st_gid: 1000
+	st_size: 4096
+	st_blksize: 4096
+	st_blocks: 8
+	st_total: 2814622554476480
+	st_mtim.tv_sec: 1604521233
+}
+}
+
+CONTENT
+total nodes in dir: 20
+{
+	t_dirent part:
+	d_name: ft_toupper.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820257920
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_isprint.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820259136
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_isalpha.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820260352
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_isdigit.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820261568
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_isalpha.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820262784
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_isupper.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820264000
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_isupper.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820265216
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_isalnum.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820266432
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_isspace.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820267648
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_tolower.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820268864
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_isascii.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820270080
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_isspace.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820271296
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_isascii.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820272512
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_isprint.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820273728
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_islower.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820274944
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_tolower.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820276160
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_toupper.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820277376
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_isalnum.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820278592
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_isdigit.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820279808
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_islower.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820281024
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+
+
+DIR
+{
+	t_dirent part:
+	d_name: libft/lst_funcs
+}{
+	t_stat part:
+	st_mode: 16877
+	st_nlink: 2
+	st_uid: 1000
+	st_gid: 1000
+	st_size: 4096
+	st_blksize: 4096
+	st_blocks: 8
+	st_total: 1970235788133536
+	st_mtim.tv_sec: 1604521233
+}
+}
+
+CONTENT
+total nodes in dir: 14
+{
+	t_dirent part:
+	d_name: ft_lstadd.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820283456
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_lstiter.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820284672
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_lstnew.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820285888
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_lstdelone.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820287104
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_lstadd.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820288320
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_lstiter.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820289536
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_lstdel.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820290752
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_lstdelone.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820291968
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_lstnew.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820293184
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_lst_addback.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820294400
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_lstdel.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820295616
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_lstmap.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820296832
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_lstmap.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820298048
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_lst_addback.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820299264
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+
+
+DIR
+{
+	t_dirent part:
+	d_name: libft/useful_funcs
+}{
+	t_stat part:
+	st_mode: 16877
+	st_nlink: 2
+	st_uid: 1000
+	st_gid: 1000
+	st_size: 4096
+	st_blksize: 4096
+	st_blocks: 8
+	st_total: 1407311277238240
+	st_mtim.tv_sec: 1604521233
+}
+}
+
+CONTENT
+total nodes in dir: 10
+{
+	t_dirent part:
+	d_name: ft_find_word.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820301696
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_crt_chmatrix.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820302912
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_del_twodem_arr.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820304128
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_swap.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820305344
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_crt_chmatrix.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820306560
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_del_twodem_arr.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820307776
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: get_next_line.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820308992
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_find_word.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820310208
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: get_next_line.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820311424
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_swap.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820312640
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+
+
+DIR
+{
+	t_dirent part:
+	d_name: libft/digit_funcs
+}{
+	t_stat part:
+	st_mode: 16877
+	st_nlink: 2
+	st_uid: 1000
+	st_gid: 1000
+	st_size: 4096
+	st_blksize: 4096
+	st_blocks: 8
+	st_total: 562924510895296
+	st_mtim.tv_sec: 1604521233
+}
+}
+
+CONTENT
+total nodes in dir: 4
+{
+	t_dirent part:
+	d_name: ft_abs.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820315072
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_itoa.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820316288
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_itoa.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820317504
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_abs.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820318720
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+
+
+DIR
+{
+	t_dirent part:
+	d_name: libft/vec_funcs
+}{
+	t_stat part:
+	st_mode: 16877
+	st_nlink: 5
+	st_uid: 1000
+	st_gid: 1000
+	st_size: 4096
+	st_blksize: 4096
+	st_blocks: 8
+	st_total: 422193383171472
+	st_mtim.tv_sec: 1602250080
+}
+}
+
+CONTENT
+total nodes in dir: 3
+{
+	t_dirent part:
+	d_name: ptr_vec
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820321152
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: char_vec
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820322400
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: int_vec
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820323664
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+
+
+DIR
+{
+	t_dirent part:
+	d_name: libft/hashtable
+}{
+	t_stat part:
+	st_mode: 16877
+	st_nlink: 2
+	st_uid: 1000
+	st_gid: 1000
+	st_size: 4096
+	st_blksize: 4096
+	st_blocks: 8
+	st_total: 562924510895296
+	st_mtim.tv_sec: 1604521235
+}
+}
+
+CONTENT
+total nodes in dir: 4
+{
+	t_dirent part:
+	d_name: ft_hash_function.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820326128
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_ht_init.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820327344
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_hash_function.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820328560
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_ht_init.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820329776
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+
+
+DIR
+{
+	t_dirent part:
+	d_name: libft/ft_printf
+}{
+	t_stat part:
+	st_mode: 16877
+	st_nlink: 2
+	st_uid: 1000
+	st_gid: 1000
+	st_size: 4096
+	st_blksize: 4096
+	st_blocks: 8
+	st_total: 6755094130743552
+	st_mtim.tv_sec: 1604521235
+}
+}
+
+CONTENT
+total nodes in dir: 48
+{
+	t_dirent part:
+	d_name: vector_operations.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820332208
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: clean_and_enlarge_vec.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820333424
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_parse_part_two.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820334640
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_parse.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820335856
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: print_arg.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820337072
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: string_helper.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820338288
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: float.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820339504
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: extract_float_values.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820340720
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: print_string.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820341936
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_parse_part_two.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820343152
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: print_arg.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820344368
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: print_buf.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820345584
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: long_arithmetic.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820346800
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: itoa_base_printf.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820348016
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: print_buf.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820349232
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: print_long.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820350448
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_printf.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820351664
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: fill_helper.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820352880
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: get_wp.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820354096
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_parse.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820355312
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: get_wp.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820356528
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: extract_float_values.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820357744
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: set_precision.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820358960
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: vector_operations.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820360176
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: print_float.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820361392
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: get_va_digit_values.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820362608
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: print_something.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820363824
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: print_char.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820365040
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: print_long.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820366256
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: get_va_digit_values.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820367472
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: long_arithmetic.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820368688
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: set_precision.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820369904
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: print_float.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820371120
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: string_helper.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820372336
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_init.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820373552
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: print_string.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820374768
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_init.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820375984
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: print_char.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820377200
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: itoa_base_printf.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820378416
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: get_va_arg.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820379632
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: atoi_move.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820380848
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: print_something.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820382064
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: fill_helper.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820383280
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: get_va_arg.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820384496
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: clean_and_enlarge_vec.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820385712
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: float.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820386928
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_printf.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820388144
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: atoi_move.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820389360
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+
+
+DIR
+{
+	t_dirent part:
+	d_name: libft/mem_funcs
+}{
+	t_stat part:
+	st_mode: 16877
+	st_nlink: 2
+	st_uid: 1000
+	st_gid: 1000
+	st_size: 4096
+	st_blksize: 4096
+	st_blocks: 8
+	st_total: 2533160299028832
+	st_mtim.tv_sec: 1604521233
+}
+}
+
+CONTENT
+total nodes in dir: 18
+{
+	t_dirent part:
+	d_name: ft_memdel.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820391792
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_memset.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820393008
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_memchr.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820394224
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_memalloc.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820395440
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_memset.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820396656
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_memdel.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820397872
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_memccpy.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820399088
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_memmove.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820400304
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_memchr.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820401520
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_memmove.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820402736
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_memcmp.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820403952
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_memcmp.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820405168
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_memalloc.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820406384
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_bzero.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820407600
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_memccpy.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820408816
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_memcpy.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820410032
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_memcpy.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820411248
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_bzero.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820412464
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+
+
+DIR
+{
+	t_dirent part:
+	d_name: libft/vec_funcs/ptr_vec
+}{
+	t_stat part:
+	st_mode: 16877
+	st_nlink: 2
+	st_uid: 1000
+	st_gid: 1000
+	st_size: 4096
+	st_blksize: 4096
+	st_blocks: 8
+	st_total: 2533160299028832
+	st_mtim.tv_sec: 1604521234
+}
+}
+
+CONTENT
+total nodes in dir: 18
+{
+	t_dirent part:
+	d_name: ft_ptr_vec_enlarge.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820414896
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_ptr_vec_del.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820416112
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_ptr_vec_init.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820417328
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_ptr_vec_popback.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820418544
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: find_and_del.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820419760
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_ptr_vec_popback.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820420976
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_ptr_vec_popfront.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820422192
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_ptr_vec_enlarge.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820423408
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_ptr_vec_del.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820424624
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: garbage_collector.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820425840
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_ptr_vec_popfront.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820427056
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_ptr_vec_pushback.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820428272
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_ptr_vec_pushback.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820429488
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: garbage_collector.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820430704
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_ptr_vec_pushfront.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820431920
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: find_and_del.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820433136
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_ptr_vec_init.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820434352
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_ptr_vec_pushfront.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820435568
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+
+
+DIR
+{
+	t_dirent part:
+	d_name: libft/vec_funcs/char_vec
+}{
+	t_stat part:
+	st_mode: 16877
+	st_nlink: 2
+	st_uid: 1000
+	st_gid: 1000
+	st_size: 4096
+	st_blksize: 4096
+	st_blocks: 8
+	st_total: 2251698043581184
+	st_mtim.tv_sec: 1604521234
+}
+}
+
+CONTENT
+total nodes in dir: 16
+{
+	t_dirent part:
+	d_name: ft_chr_vec_init.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820438000
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_chr_vec_popfront.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820439216
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_chr_vec_del.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820440432
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_vec_init.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820441648
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_chr_vec_init.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820442864
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_vec_init.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820444080
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_vec_enlarge.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820445296
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_vec_clear.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820446512
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_vec_enlarge.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820447728
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_chr_vec_del.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820448944
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_chr_vec_pushback.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820450160
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_chr_vec_enlarge.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820451376
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_vec_clear.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820452592
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_chr_vec_pushback.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820453808
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_chr_vec_enlarge.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820455024
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_chr_vec_popfront.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820456240
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+
+
+DIR
+{
+	t_dirent part:
+	d_name: libft/vec_funcs/int_vec
+}{
+	t_stat part:
+	st_mode: 16877
+	st_nlink: 2
+	st_uid: 1000
+	st_gid: 1000
+	st_size: 4096
+	st_blksize: 4096
+	st_blocks: 8
+	st_total: 1970235788133536
+	st_mtim.tv_sec: 1604521234
+}
+}
+
+CONTENT
+total nodes in dir: 14
+{
+	t_dirent part:
+	d_name: ft_ivec_init.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820458672
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_int_vec_popfront.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820459888
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_int_vec_enlarge.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820461104
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_int_vec_popback.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820462320
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_int_vec_popfront.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820463536
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_int_vec_pushback.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820464752
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_int_vec_del.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820465968
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_int_vec_del.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820467184
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_int_vec_pushfront.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820468400
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_int_vec_pushback.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820469616
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_int_vec_popback.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820470832
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_ivec_init.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820472048
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_int_vec_enlarge.c
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820473264
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+{
+	t_dirent part:
+	d_name: ft_int_vec_pushfront.o
+}{
+	t_stat part:
+	st_mode: -1950125828
+	st_nlink: 0
+	st_uid: 32757
+	st_gid: -2065664256
+	st_size: 336
+	st_blksize: 94234820474480
+	st_blocks: 140731127723824
+	st_total: 0
+	st_mtim.tv_sec: 13295043434144310272
+}
+}
+
+
+
