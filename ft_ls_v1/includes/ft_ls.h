@@ -9,6 +9,13 @@
 #define st_atim st_atimespec
 #define st_ctim st_ctimespec
 #define st_mtim st_mtimespec
+#define __off_t off_t
+#define __gid_t gid_t
+#define __uid_t uid_t
+#define __uint16_t uint16_t
+#define __nlink_t nlink_t
+#define __darwin_mode_t darwin_mode_t
+#define __mode_t mode_t
 #endif
 
 #include "libft.h"
