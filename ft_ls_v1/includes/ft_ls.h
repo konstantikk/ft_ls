@@ -5,6 +5,12 @@
 #ifndef FT_LS_FT_LS_H
 #define FT_LS_FT_LS_H
 
+#if defined(__APPLE__) || defined(__NetBSD__)
+#define st_atim st_atimespec
+#define st_ctim st_ctimespec
+#define st_mtim st_mtimespec
+#endif
+
 #include "libft.h"
 #include <dirent.h>
 #include <errno.h>
@@ -82,11 +88,11 @@ typedef struct s_node {
 	char d_name[256];
 	unsigned char d_type;
 	//t_stat
-	__mode_t st_mode;
-	__nlink_t st_nlink;
-	__uid_t st_uid;
-	__gid_t st_gid;
-	__off_t st_size;
+	mode_t st_mode;
+	nlink_t st_nlink;
+	uid_t st_uid;
+	gid_t st_gid;
+	off_t st_size;
 	struct timespec st_mtim;
 } 			   t_node;
 
