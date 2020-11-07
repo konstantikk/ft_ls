@@ -99,8 +99,8 @@ typedef struct s_node {
 	///s_node
 	t_pvec* nodes;
 	size_t total;
-	///char path[256]; ??
-
+	char full_path[MAX_FILENAME_SIZE];
+	int full_path_is_set:1;
 	///t_dirent
 	char d_name[MAX_FILENAME_SIZE];
 	unsigned char d_type;

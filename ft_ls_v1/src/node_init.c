@@ -20,7 +20,8 @@ void get_node_info(t_node* node) {
 	t_stat st;
 
 	///may be error if -1 is returned
-	stat(node->d_name, &st);
+	if (stat(node->full_path, &st) == -1)
+		finish_him();
 	copy_info(node, &st);
 }
 
@@ -31,8 +32,10 @@ t_node* init_node(const char* node_name, unsigned char d_type) {
 	if (!(node = ft_memalloc(sizeof(t_node))))
 		finish_him();
 	ft_memcpy(node->d_name, node_name, MAX_FILENAME_SIZE * sizeof(char));
-	node->nodes = ft_ptr_vec_init();
-	node->d_type = d_type;
+	if (d_type == DT_DIR || d_type == DT_LNK) {
+		node->nodes = ft_ptr_vec_init();
+		node->d_type = d_type;
+	}
 	return node;
 }
 
