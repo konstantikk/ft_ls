@@ -14,7 +14,7 @@ void debug_output_content_one(t_node* node) {
 	printf("\tst_size: %lu\n", node->st_size);
 	printf("\tst_blksize: %lu\n", node->st_blksize);
 	printf("\tst_blocks: %lu\n", node->st_blocks);
-	printf("\tst_total: %lu\n", node->total);
+	printf("\ttotal: %lu\n", node->total);
 	printf("\tst_mtim.tv_sec: %lu\n}\n", node->st_mtim.tv_sec);
 	printf("}\n\n");
 }
@@ -89,7 +89,8 @@ void get_dir(t_handler* handler, const char* dir_name, t_stat* st) {
 
 
 	///init and copy name
-	dir = init_node(dir_name, 0);
+	dir = init_node(dir_name,
+				 S_ISDIR(st->st_mode) ? DT_DIR : DT_LNK);
 	///copy st needed fields
 	copy_info(dir, st);
 	while ((node_content = readdir(ptr)) != NULL) {
