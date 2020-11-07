@@ -68,7 +68,7 @@ void get_file(t_handler* handler, const char* file_name, t_stat* st) {
 	if (!(handler->flags & ALL_NODES) && file_name[0] == '.')
 		return ;
 	///in files which came as args the type is in st
-	node_content = init_node(file_name, 0);
+	node_content = init_node(file_name, S_ISLNK(st->st_mode) ? DT_LNK : 0);
 
 	///get additional info
 	if (handler->flags & LIST || handler->flags & TIME_SORT) {
@@ -88,9 +88,8 @@ void get_dir(t_handler* handler, const char* dir_name, t_stat* st) {
 		finish_him();
 
 
-	///init and copy name
-	dir = init_node(dir_name,
-				 S_ISDIR(st->st_mode) ? DT_DIR : DT_LNK);
+	///init and copy name; here will come readlinked dir name
+	dir = init_node(dir_name, S_ISDIR(st->st_mode) ? DT_DIR : DT_LNK);
 	///copy st needed fields
 	copy_info(dir, st);
 	while ((node_content = readdir(ptr)) != NULL) {
