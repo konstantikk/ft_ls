@@ -100,6 +100,9 @@ typedef struct s_node {
 	t_pvec* nodes;
 	size_t total;
 	char full_path[MAX_FILENAME_SIZE];
+	///in some cases we need to if full path is set thats why I added
+	///this bool var for easy access and no heuristic
+	///like checking first element of the char array
 	int full_path_is_set:1;
 	///t_dirent
 	char d_name[MAX_FILENAME_SIZE];
