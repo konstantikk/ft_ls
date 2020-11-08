@@ -114,7 +114,9 @@ void get_dir(t_handler* handler, const char* dir_name, t_stat* st) {
 			ft_ptr_vec_pushback(handler->input_nodes, &CURRENT_NODE->full_path);
 		}
 	}
-	///sort dir??
+	///sort dir ??
+	sort_nodes(((t_node**)(dir->nodes->data)), 0,
+	  (int)(dir->nodes->length - 1), handler->flags);
 	///push processed dir to processed nodes
 	ft_ptr_vec_pushback(handler->processed_nodes, dir);
 	if (closedir(ptr) == -1)

@@ -100,7 +100,7 @@ typedef struct s_node {
 	t_pvec* nodes;
 	size_t total;
 	char full_path[MAX_FILENAME_SIZE];
-	///in some cases we need to if full path is set thats why I added
+	///in some cases we need to know if full path is set thats why I added
 	///this bool var for easy access and no heuristic
 	///like checking first element of the char array
 	int full_path_is_set:1;
@@ -149,6 +149,7 @@ typedef struct s_handler {
 void print_node(const t_dirent* dir);
 void parse_input(int argc, char** argv, t_handler *handler);
 void read_nodes(t_handler *handler);
+void sort_nodes(t_node** nodes, const int begin, const int end, unsigned int flags);
 void copy_info(t_node* node, t_stat* st);
 void get_node_info(t_node* node);
 t_node* init_node(const char* node_name, unsigned char d_type);
