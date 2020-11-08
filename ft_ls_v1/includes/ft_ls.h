@@ -118,6 +118,7 @@ typedef struct s_node {
 	__blkcnt_t st_blocks;
 	__blksize_t st_blksize;
 	struct timespec st_mtim;
+	size_t          max_file_name; // for correct output
 	size_t          name_len; // length file or dir name
 } 			   t_node;
 
@@ -159,4 +160,5 @@ t_node* init_node_and_get_info(const char* node_name, unsigned char d_type);
 void finish_him();
 
 void generate_output(t_handler *handler);
+void output_manager(t_handler *handler);
 #endif //FT_LS_FT_LS_H

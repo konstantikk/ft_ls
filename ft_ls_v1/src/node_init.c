@@ -32,16 +32,19 @@ t_node* init_node(const char* node_name, unsigned char d_type) {
 
 	if (!(node = ft_memalloc(sizeof(t_node))))
 		finish_him();
-	if (d_type == DT_LNK) {
+	if (d_type == DT_LNK)
+	{
 		if (readlink(node_name, node->d_name, MAX_FILENAME_SIZE) == -1)
 			finish_him();
 	}
 	else
 		ft_memcpy(node->d_name, node_name, MAX_FILENAME_SIZE * sizeof(char));
-	if (d_type == DT_DIR || d_type == DT_LNK) {
+	if (d_type == DT_DIR || d_type == DT_LNK)
+	{
 		node->nodes = ft_ptr_vec_init();
 		node->d_type = d_type;
 	}
+	node->name_len = ft_strlen(node_name); // length of the name file for output
 	return node;
 }
 

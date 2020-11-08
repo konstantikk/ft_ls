@@ -2,7 +2,7 @@ COMPILER = gcc
 CHECK_FLAGS = -Wall -Wextra #-Werror
 NAME = ft_ls_v1
 ADD_SRC = ./src/
-RESOURCES = main.c print_nodes.c args_parse.c read_nodes.c node_init.c
+RESOURCES = main.c print_nodes.c args_parse.c read_nodes.c node_init.c generate_output.c
 SRC_S = $(addprefix $(ADD_SRC), $(RESOURCES))
 OBJ = $(SRC_S:.c=.o)
 ADD_INC = ./includes/
