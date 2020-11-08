@@ -16,6 +16,8 @@
 #define __nlink_t nlink_t
 #define __darwin_mode_t darwin_mode_t
 #define __mode_t mode_t
+#define __blksize_t blksize_t
+#define __blkcnt_t blkcnt_t
 #endif
 
 #include "libft.h"
@@ -116,6 +118,7 @@ typedef struct s_node {
 	__blkcnt_t st_blocks;
 	__blksize_t st_blksize;
 	struct timespec st_mtim;
+	size_t          name_len; // length file or dir name
 } 			   t_node;
 
 typedef struct  s_dir {
@@ -155,4 +158,6 @@ void get_node_info(t_node* node);
 t_node* init_node(const char* node_name, unsigned char d_type);
 t_node* init_node_and_get_info(const char* node_name, unsigned char d_type);
 void finish_him();
+
+void generate_output(t_handler *handler);
 #endif //FT_LS_FT_LS_H
