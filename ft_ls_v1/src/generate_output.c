@@ -44,7 +44,7 @@ char *collect_inf()
 
 }
 
-void output_manager(t_handler *handler)
+void output_manager(t_handler *handler)  //TODO Not support Recursive flag
 {
     // Check flags
     // Check type
@@ -52,6 +52,7 @@ void output_manager(t_handler *handler)
     // First files second directory with files
     // For directory print total
     register    size_t i;
+    register    size_t j;
     t_cvec      *output_str;
     t_node      *node;
     size_t      max;
@@ -70,16 +71,23 @@ void output_manager(t_handler *handler)
     }
     else
     {
-        max = find_max(handler);
+        max = handler->global_max->data[handler->global_max->length - 1];//find_max(handler);
+        printf("%zu\n max %zu", handler->processed_nodes->length, max);
         while (++i < handler->processed_nodes->length)
         {
             node = (t_node*)(handler->processed_nodes->data[i]);
-            if (node->d_type == DT_DIR && node->nodes == NULL)
+            if (handler->processed_nodes->length == 1 &&
+                node->d_type == DT_DIR && node->nodes->length == 0) // TODO check empty dir
                 continue;
             if (node->d_type == DT_DIR)
             {
-                ft_chr_vec_pushback(output_str, ft_strjoin(node->d_name, ":\n")); // dir_name:\n
+                ft_chr_vec_pushback(output_str, ft_strjoin(node->d_name, ft_strdup(":\n"))); // dir_name:\n
                 // cycle by files in directory
+                j = -1;
+                while (++j < node->nodes->length)
+                {
+
+                }
                 ft_chr_vec_pushback(output_str, "\n");
             }
             else
