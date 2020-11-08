@@ -152,5 +152,5 @@ void read_nodes(t_handler* handler) {
 		 S_ISDIR(st.st_mode) || S_ISLNK(st.st_mode) ?
 		 	get_dir(handler, node_name, &st) : get_file(handler, node_name, &st);
 	}
-	debug_read_nodes(handler, handler->processed_nodes);
+	// debug_read_nodes(handler, handler->processed_nodes); //TODO
 }
