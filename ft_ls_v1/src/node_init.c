@@ -38,9 +38,9 @@ t_node* init_node(const char* node_name, unsigned char d_type) {
 			finish_him();
 	}
 	else
-		ft_memcpy(node->d_name, node_name, MAX_FILENAME_SIZE * sizeof(char));
-	if (d_type == DT_DIR || d_type == DT_LNK)
-	{
+
+		ft_memcpy(node->d_name, node_name, MAX_FILENAME_SIZE);
+	if (d_type == DT_DIR || d_type == DT_LNK) {
 		node->nodes = ft_ptr_vec_init();
 		node->d_type = d_type;
 	}
