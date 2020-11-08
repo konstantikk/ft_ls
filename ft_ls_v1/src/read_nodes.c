@@ -5,6 +5,7 @@
 
 void debug_output_content_one(t_node* node) {
 	printf("{\n\tt_dirent part:\n");
+	printf("\tfull_path: %s\n", node->full_path);
 	printf("\td_name: %s\n}", node->d_name);
 	printf("{\n\tt_stat part:\n");
 	printf("\tst_mode: %d\n", node->st_mode);
@@ -74,7 +75,8 @@ void get_file(t_handler* handler, const char* file_name, t_stat* st) {
 	if (handler->flags & LIST || handler->flags & TIME_SORT) {
 		copy_info(node_content, st);
 	}
-	ft_ptr_vec_pushback(handler->processed_nodes, node_content);
+	ft_ptr_vec_pushfront(handler->processed_nodes, node_content);
+	++handler->files_num;
 }
 
 
@@ -127,6 +129,9 @@ void get_dir(t_handler* handler, const char* dir_name, t_stat* st) {
 ///difference between dir and file is that in directory (t_node) field node is MALLOCED
 ///in file it is NULL
 
+
+///all files are in pushfronted
+///all dirs are pushbacked
 void read_nodes(t_handler* handler) {
 	register size_t i;
 	t_stat st;
@@ -154,5 +159,10 @@ void read_nodes(t_handler* handler) {
 		 S_ISDIR(st.st_mode) || S_ISLNK(st.st_mode) ?
 		 	get_dir(handler, node_name, &st) : get_file(handler, node_name, &st);
 	}
+	///sort files
+	sort_nodes((t_node**)handler->processed_nodes, 0, handler->files_num - 1, handler->flags);
+	///sort dirs right now sort is happening by d_name FIXME
+	sort_nodes((t_node**)handler->processed_nodes,
+			handler->files_num + 1, handler->processed_nodes->length - 1, handler->flags);
 	debug_read_nodes(handler, handler->processed_nodes);
 }

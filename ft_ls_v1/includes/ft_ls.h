@@ -146,6 +146,8 @@ typedef struct  s_dir {
 typedef struct s_handler {
 	t_pvec* input_nodes;
 	t_pvec* processed_nodes;
+	///var to count files to sort in the end
+	int files_num;
 	unsigned int flags;
 } 				t_handler;
 

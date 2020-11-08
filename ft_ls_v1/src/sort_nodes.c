@@ -24,6 +24,10 @@ int name_sort_dec(const t_node* lhs, const t_node* rhs) {
 	return ft_strcmp((const char *) &lhs->d_name, (const char*)&rhs->d_name) > 0;
 }
 
+///if happens name sort in the end
+///directories will be sort by full path
+///files will be sorted by d_name
+
 void node_swap(t_node** lhs, t_node** rhs) {
 	t_node* temp;
 
@@ -60,21 +64,17 @@ void quicksort(t_node** nodes, const int begin, const int end, int (*cond)(const
 	}
 }
 
-void sort_helper(t_node**nodes, const int begin, const int end,
-				 int (*cond)(const t_node*, const t_node*)) {
-		quicksort(nodes, begin, end, cond);
-}
-
 ///function driver which will decide what kind of sort we need
 void sort_nodes(t_node** nodes,
 		  const int begin, const int end, const unsigned int flags) {
-
+	if (begin >= end)
+		return ;
 	///ifs for specific sort and else is for default name sort
 	if (flags & TIME_SORT) {
-		sort_helper(nodes, begin, end,
+		quicksort(nodes, begin, end,
 			  flags & REVERSE_SORT ? time_sort_dec : time_sort_inc);
 	} else {
-		sort_helper(nodes, begin, end,
+		quicksort(nodes, begin, end,
 			  flags & REVERSE_SORT ? name_sort_dec : name_sort_inc);
 	}
 
