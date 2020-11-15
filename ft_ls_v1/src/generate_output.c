@@ -29,6 +29,8 @@ void collect_files(t_cvec *output_str, t_node *node, size_t max, int not_last_fl
         ft_chr_vec_pushback(output_str,(char *)ft_memset(temp, ' ',
                                               max - node->name_len + 1));
     ft_memdel(&temp);
+    if (!not_last_flag)
+        ft_chr_vec_pushback(output_str, "\n");
 }
 
 //char *collect_inf()
@@ -83,7 +85,6 @@ void output_manager(t_handler *handler, t_pvec *processed_nodes)  //TODO Not sup
                 }
                 if (i != processed_nodes->length - 1)
                     ft_chr_vec_pushback(output_str, "\n");
-                ft_chr_vec_pushback(output_str, "\n");
             }
             else
             {
