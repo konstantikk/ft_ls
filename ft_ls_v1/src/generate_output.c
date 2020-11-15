@@ -33,10 +33,32 @@ void collect_files(t_cvec *output_str, t_node *node, size_t max, int last_flag)
     ft_memdel(&temp);
 }
 
-//char *collect_inf()
-//{
-//    ;
-//}
+void    collect_inf(t_cvec *output_str, t_node *node)
+{
+    // create buffer for one line and manage string into buffer
+    t_stat st;
+    size_t max;
+
+    stat(node->d_name, &st);
+    ft_printf("%c%s %s %s %s %s %s %s\n", print_type(node->d_type),
+              print_permissions(st.st_mode),
+              ft_itoa(st.st_nlink),
+              getpwuid(st.st_uid)->pw_name,
+              getgrgid(st.st_gid)->gr_name,
+              ft_itoa(st.st_size),
+              print_time(&st.st_mtim.tv_sec),
+              node->d_name);
+    ft_chr_vec_pushback(output_str, print_type(node->d_type));
+    ft_chr_vec_pushback(output_str, print_permissions(st.st_mode));
+    ft_chr_vec_pushback(output_str, ft_itoa(st.st_nlink));
+    ft_chr_vec_pushback(output_str, getpwuid(st.st_uid)->pw_name);
+    ft_chr_vec_pushback(output_str, getgrgid(st.st_gid)->gr_name);
+    ft_chr_vec_pushback(output_str, ft_itoa(st.st_size));
+    ft_chr_vec_pushback(output_str, print_time(&st.st_mtim.tv_sec));
+    ft_chr_vec_pushback(output_str, node->d_name);
+
+
+}
 
 void output_manager(t_handler *handler, t_pvec *processed_nodes)  //TODO Not support Recursive flag
 {
@@ -55,11 +77,18 @@ void output_manager(t_handler *handler, t_pvec *processed_nodes)  //TODO Not sup
     output_str = ft_chr_vec_init(1000); // len names of files + white space
     if (handler->flags & LIST)
     {
-        while (++i < handler->processed_nodes->length)
+        while (++i < processed_nodes->length)
         {
-
-            // collect information find max
-
+            cond = NODE(processed_nodes, i)->nodes == NULL;
+            if (processed_nodes->length == 1 && !cond &&
+                NODE(processed_nodes, i)->nodes->length == 0) // TODO check empty dir
+                continue;
+            if (!cond) // Directory
+                ;
+            else
+            {
+                collect_inf(output_str, NODE(processed_nodes, i));
+            }
         }
     }
     else
@@ -73,8 +102,13 @@ void output_manager(t_handler *handler, t_pvec *processed_nodes)  //TODO Not sup
             if (!cond) // Directory
             {
                 // TODO conditions
-                ft_chr_vec_pushback(output_str, ft_strjoin(NODE(processed_nodes, i)->d_name,
-                                                           ft_strdup(":\n"))); // dir_name:\n
+                if (processed_nodes->length != 1)
+                {
+                    ft_chr_vec_pushback(output_str,
+                                        NODE(processed_nodes, i)->full_path_is_set ?
+                                        NODE(processed_nodes, i)->full_path : NODE(processed_nodes, i)->d_name);
+                    ft_chr_vec_pushback(output_str, ":\n");
+                }
                 // cycle by files in directory
                 j = -1;
                 while (++j < NODE(processed_nodes, i)->nodes->length)
@@ -90,11 +124,11 @@ void output_manager(t_handler *handler, t_pvec *processed_nodes)  //TODO Not sup
             {
                 max = find_max(processed_nodes); // TODO next version
                 collect_files(output_str, NODE(processed_nodes, i), max,
-                              (i <= processed_nodes->length - 2 && (NODE(processed_nodes, i + 1)->nodes != NULL)) ||
+                              (i <= processed_nodes->length - 2 &&
+                              (NODE(processed_nodes, i + 1)->nodes != NULL)) ||
                                           i == processed_nodes->length - 1);
                 if (i <= processed_nodes->length - 2 && (NODE(processed_nodes, i + 1)->nodes != NULL))
                     ft_chr_vec_pushback(output_str, "\n");
-
             }
         }
     }

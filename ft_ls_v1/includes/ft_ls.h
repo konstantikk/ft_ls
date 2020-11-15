@@ -166,4 +166,7 @@ void finish_him();
 
 void generate_output(t_handler *handler);
 void output_manager(t_handler *handler, t_pvec *processed_node);
+char* print_time(const time_t *time);
+char* print_permissions(mode_t st_mode);
+char print_type(const unsigned char d_type);
 #endif //FT_LS_FT_LS_H
