@@ -19,18 +19,18 @@ int find_max(t_pvec * nodes) // TODO useless in next versions
     return (max);
 }
 
-void collect_files(t_cvec *output_str, t_node *node, size_t max, int not_last_flag)
+void collect_files(t_cvec *output_str, t_node *node, size_t max, int last_flag)
 {
     void    *temp;
 
     ft_chr_vec_pushback(output_str, node->d_name);
     temp = ft_strnew(max - node->name_len + 1); // TODO how did not use malloc? or use malloc once
-    if (not_last_flag)
+    if (!last_flag)
         ft_chr_vec_pushback(output_str,(char *)ft_memset(temp, ' ',
                                               max - node->name_len + 1));
-    ft_memdel(&temp);
-    if (!not_last_flag)
+    else
         ft_chr_vec_pushback(output_str, "\n");
+    ft_memdel(&temp);
 }
 
 //char *collect_inf()
@@ -81,7 +81,7 @@ void output_manager(t_handler *handler, t_pvec *processed_nodes)  //TODO Not sup
                 {
                     max = find_max((t_pvec *)NODE(processed_nodes, i)->nodes); // TODO next version
                     collect_files(output_str, NODE(NODE(processed_nodes, i)->nodes, j), max,
-                                  j != NODE(processed_nodes, i)->nodes->length - 1);
+                                  j == NODE(processed_nodes, i)->nodes->length - 1);
                 }
                 if (i != processed_nodes->length - 1)
                     ft_chr_vec_pushback(output_str, "\n");
@@ -90,7 +90,11 @@ void output_manager(t_handler *handler, t_pvec *processed_nodes)  //TODO Not sup
             {
                 max = find_max(processed_nodes); // TODO next version
                 collect_files(output_str, NODE(processed_nodes, i), max,
-                              i != processed_nodes->length - 1);
+                              (i <= processed_nodes->length - 2 && (NODE(processed_nodes, i + 1)->nodes != NULL)) ||
+                                          i == processed_nodes->length - 1);
+                if (i <= processed_nodes->length - 2 && (NODE(processed_nodes, i + 1)->nodes != NULL))
+                    ft_chr_vec_pushback(output_str, "\n");
+
             }
         }
     }
