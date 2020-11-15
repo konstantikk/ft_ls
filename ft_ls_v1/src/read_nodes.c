@@ -160,10 +160,5 @@ void read_nodes(t_handler* handler) {
 		 	get_dir(handler, node_name, &st) : get_file(handler, node_name, &st);
 	}
 
-	///sort files
-	sort_nodes((t_node**)handler->processed_nodes, 0, handler->files_num - 1, handler->flags);
-	///sort dirs right now sort is happening by d_name FIXME
-	sort_nodes((t_node**)handler->processed_nodes,
-			handler->files_num + 1, handler->processed_nodes->length - 1, handler->flags);
-	debug_read_nodes(handler, handler->processed_nodes);
+	//debug_read_nodes(handler, handler->processed_nodes);
 }

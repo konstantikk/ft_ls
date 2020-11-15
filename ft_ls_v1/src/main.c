@@ -13,15 +13,6 @@ void finish_him() {
 ///or maybe we could make it global??
 ///we will probably need to save the names of directories not the ptrs to them (!!!(fixed))
 
-void dir_push_wrapper(t_handler* handler, const char* dir) {
-	if (ft_ptr_vec_pushback(handler->input_nodes, (void*)dir) == -1)
-		///freshers
-		finish_him();
-}
-
-///init here more field if needed
-///may be takes 4 args size of dirs, dirs, and flags for execution and for the function
-
 
 t_handler* init_handler(void) {
 	t_handler* handler;
@@ -41,34 +32,12 @@ t_handler* init_handler(void) {
 	return handler;
 }
 
-///flags will work here
-///this function needs to be well thought out
-
-///opening and closing of dir is happening here
-void output_content(t_handler* handler, const char* dir_name, const int dirs_size) {
-	DIR* dir_ptr = opendir(dir_name);
-
-	if (dir_ptr == NULL)
-		finish_him();
-	if (dirs_size > 1)
-		ft_printf("%s:\n", dir_name);
-	t_dirent* dir_data;
-	while ((dir_data = readdir(dir_ptr)) != NULL)
-		print_node(dir_data);
-	ft_putchar('\n');
-	if (closedir(dir_ptr) == -1)
-		finish_him();
-}
-
-void read_dirs(t_handler* handler) {
-	register int i;
-
-	i = 0;
-	///slightly better
-	while (i < handler->input_nodes->length) {
-		output_content(handler, handler->input_nodes->data[i], handler->input_nodes->length);
-		++i;
-	}
+void sort_all_nodes(t_handler* handler) {
+	sort_nodes(handler->processed_nodes->data,
+			0, handler->files_num - 1, handler->flags);
+	///sort dirs right now sort is happening by d_name FIXME
+	sort_nodes(handler->processed_nodes->data,
+			   handler->files_num, handler->processed_nodes->length - 1, handler->flags);
 }
 
 int main(int argc, char** argv) {
@@ -82,8 +51,9 @@ int main(int argc, char** argv) {
 	handler = init_handler();
 	parse_input(argc, argv, handler);
 	read_nodes(handler);
-	///sort()
-
+	sort_all_nodes(handler);
+	debug_read_nodes(handler, handler->processed_nodes);
+	///sort files
 	///display_content();
 	///free_data();
 

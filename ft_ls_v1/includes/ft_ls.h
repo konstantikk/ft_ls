@@ -158,9 +158,11 @@ void read_nodes(t_handler *handler);
 void sort_nodes(t_node** nodes, const int begin, const int end, unsigned int flags);
 void copy_info(t_node* node, t_stat* st);
 void get_node_info(t_node* node);
+void debug_read_nodes(t_handler* handler, t_pvec* processed_nodes);
 t_node* init_node(const char* node_name, unsigned char d_type);
 t_node* init_node_and_get_info(const char* node_name, unsigned char d_type);
 void finish_him();
+
 
 void generate_output(t_handler *handler);
 void output_manager(t_handler *handler);
