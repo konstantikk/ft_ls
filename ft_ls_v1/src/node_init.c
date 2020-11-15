@@ -44,7 +44,7 @@ t_node* init_node(const char* node_name, unsigned char d_type) {
 		node->nodes = ft_ptr_vec_init();
 		node->d_type = d_type;
 	}
-	node->name_len = ft_strlen(node_name); // length of the name file for output
+	node->d_name_len = ft_strlen(node->d_name); ///d_name len
 	return node;
 }
 

@@ -3,39 +3,6 @@
 //
 #include "ft_ls.h"
 
-void debug_output_content_one(t_node* node) {
-	printf("{\n\tt_dirent part:\n");
-	printf("\tfull_path: %s\n", node->full_path);
-	printf("\td_name: %s\n}", node->d_name);
-	printf("{\n\tt_stat part:\n");
-	printf("\tst_mode: %d\n", node->st_mode);
-	printf("\tst_nlink: %lu\n", node->st_nlink);
-	printf("\tst_uid: %d\n", node->st_uid);
-	printf("\tst_gid: %d\n", node->st_gid);
-	printf("\tst_size: %lu\n", node->st_size);
-	printf("\tst_blksize: %lu\n", node->st_blksize);
-	printf("\tst_blocks: %lu\n", node->st_blocks);
-	printf("\ttotal: %lu\n", node->total);
-	printf("\tst_mtim.tv_sec: %lu\n}\n", node->st_mtim.tv_sec);
-	printf("}\n\n");
-}
-
-void debug_read_nodes(t_handler* handler, t_pvec* processed_nodes) {
-	printf("total directories processed: %lu\n", processed_nodes->length);
-	for (int i = 0; i < processed_nodes->length; ++i) {
-		int cond = NODE(processed_nodes, i)->nodes == NULL;
-		printf("%s\n", cond ? "FILE" : "DIR");
-		debug_output_content_one(NODE(processed_nodes, i));
-		if (!cond) {
-			printf("CONTENT\n");
-			printf("total nodes in dir: %lu\n", NODE(processed_nodes, i)->nodes->length);
-			for (int j = 0; j < NODE(processed_nodes, i)->nodes->length; ++j) {
-				debug_output_content_one(NODE(NODE(processed_nodes, i)->nodes, j));
-			}
-		}
-		printf("\n\n");
-	}
-}
 /**
  * issues we are facing:
  *  	1) output name of the directory that we are parsing then the content of it
@@ -45,23 +12,6 @@ void debug_read_nodes(t_handler* handler, t_pvec* processed_nodes) {
  *  	5) total must be divided by 2
  *  	WIP
  */
-
-///
-void set_fullpath(t_node* node, const char* prefix, const char* node_name) {
-	const size_t len_prefix = ft_strlen(prefix);
-	const size_t len_node_name = ft_strlen(node_name);
-
-	///strnew creates len + 1 elem for '\0'
-	///we need additional symbol for '/' thats why we pass to strnew +1
-	ft_memcpy(node->full_path, prefix, len_prefix * sizeof(char));
-	///put slash
-	node->full_path[len_prefix] = '/';
-	///copy rest
-	///because we dont want to override new symbol '\' which is placed at the position len_prefix + 1
-	ft_memcpy(node->full_path + (len_prefix + 1), node_name, len_node_name * sizeof(char));
-	///set bool variable that full path is set for easy access
-	node->full_path_is_set = 1;
-}
 
 void get_file(t_handler* handler, const char* file_name, t_stat* st) {
 	t_node* node_content;
@@ -118,9 +68,14 @@ void get_dir(t_handler* handler, const char* dir_name, t_stat* st) {
 	}
 	///sort dir ??
 	sort_nodes(((t_node**)(dir->nodes->data)), 0,
-	  (int)(dir->nodes->length - 1), handler->flags);
+	  (int)(dir->nodes->length - 1), handler->flags, LOCAL);
+	///get filename len
+	dir->local_max_filename_len =
+			get_max_filename_len(dir->nodes, LOCAL);
+
 	///push processed dir to processed nodes
 	ft_ptr_vec_pushback(handler->processed_nodes, dir);
+
 	if (closedir(ptr) == -1)
 		finish_him();
 }
@@ -159,6 +114,8 @@ void read_nodes(t_handler* handler) {
 		 S_ISDIR(st.st_mode) || S_ISLNK(st.st_mode) ?
 		 	get_dir(handler, node_name, &st) : get_file(handler, node_name, &st);
 	}
-
-	//debug_read_nodes(handler, handler->processed_nodes);
+	///get global namelen max
+	handler->global_max_filename_len =
+			get_max_filename_len(handler->processed_nodes, GLOBAL);
+	debug_read_nodes(handler, handler->processed_nodes);
 }

@@ -61,8 +61,8 @@ typedef struct stat	  t_stat;
 
 ///in case we will need more execution enums to make our lives easier
 typedef enum e_exec {
-	NO_DIRS_IN_ARGS,
-	DIRS_IN_ARGS
+	LOCAL,
+	GLOBAL
 } 			 t_exec;
 
 
@@ -96,19 +96,30 @@ typedef enum e_exec {
  *  maybe we should just make struct wrapper around t_dirent and stat
  */
 
+
 typedef struct s_node {
 	///global fields
 	///s_node
 	t_pvec* nodes;
 	size_t total;
+
+	///custom
 	char full_path[MAX_FILENAME_SIZE];
 	///in some cases we need to know if full path is set thats why I added
 	///this bool var for easy access and no heuristic
 	///like checking first element of the char array
 	int full_path_is_set:1;
+
+	///for output purpose
+	size_t local_max_filename_len;
+	size_t full_path_len;
+	size_t d_name_len;
+
 	///t_dirent
 	char d_name[MAX_FILENAME_SIZE];
 	unsigned char d_type;
+
+
 	///t_stat
 	__mode_t st_mode;
 	__nlink_t st_nlink;
@@ -118,8 +129,8 @@ typedef struct s_node {
 	__blkcnt_t st_blocks;
 	__blksize_t st_blksize;
 	struct timespec st_mtim;
-	size_t          max_file_name; // for correct output
-	size_t          name_len; // length file or dir name
+
+
 } 			   t_node;
 
 typedef struct  s_dir {
@@ -145,22 +156,29 @@ typedef struct  s_dir {
  */
 
 typedef struct s_handler {
+	///vec to hold input data
 	t_pvec* input_nodes;
+	///vec to hold 'ready to output' data
 	t_pvec* processed_nodes;
 	///var to count files to sort in the end
 	int files_num;
+	///for output purpose
+	size_t global_max_filename_len;
+	///configuration of execution
 	unsigned int flags;
 } 				t_handler;
 
 void print_node(const t_dirent* dir);
 void parse_input(int argc, char** argv, t_handler *handler);
 void read_nodes(t_handler *handler);
-void sort_nodes(t_node** nodes, const int begin, const int end, unsigned int flags);
+void sort_nodes(t_node** nodes, const int begin, const int end, unsigned int flags, const t_exec sort_type);
 void copy_info(t_node* node, t_stat* st);
 void get_node_info(t_node* node);
 void debug_read_nodes(t_handler* handler, t_pvec* processed_nodes);
 t_node* init_node(const char* node_name, unsigned char d_type);
 t_node* init_node_and_get_info(const char* node_name, unsigned char d_type);
+void set_fullpath(t_node* node, const char* prefix, const char* node_name);
+size_t get_max_filename_len(t_pvec* nodes, const t_exec max_type);
 void finish_him();
 
 

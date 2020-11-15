@@ -15,13 +15,39 @@ int time_sort_dec(const t_node* lhs, const t_node* rhs) {
 }
 
 ///increasing order
-int name_sort_inc(const t_node* lhs, const t_node* rhs) {
+int local_name_sort_inc(const t_node* lhs, const t_node* rhs) {
 	return ft_strcmp((const char *) &lhs->d_name, (const char*)&rhs->d_name) < 0;
 }
 
 ///decreasing order
-int name_sort_dec(const t_node* lhs, const t_node* rhs) {
+int local_name_sort_dec(const t_node* lhs, const t_node* rhs) {
 	return ft_strcmp((const char *) &lhs->d_name, (const char*)&rhs->d_name) > 0;
+}
+
+///increasing order
+int global_name_sort_inc(const t_node* lhs, const t_node* rhs) {
+	if (lhs->full_path_is_set && rhs->full_path_is_set) {
+		return ft_strcmp((const char *) &lhs->full_path, (const char*)&rhs->full_path) < 0;
+	} else if (lhs->full_path_is_set) {
+		return ft_strcmp((const char *) &lhs->full_path, (const char*)&rhs->d_name) < 0;
+	} else if (rhs->full_path_is_set) {
+		return ft_strcmp((const char *) &lhs->d_name, (const char*)&rhs->full_path) < 0;
+	} else {
+		return ft_strcmp((const char *) &lhs->d_name, (const char*)&rhs->d_name) < 0;
+	}
+}
+
+///decreasing order
+int global_name_sort_dec(const t_node* lhs, const t_node* rhs) {
+	if (lhs->full_path_is_set && rhs->full_path_is_set) {
+		return ft_strcmp((const char *) &lhs->full_path, (const char*)&rhs->full_path) > 0;
+	} else if (lhs->full_path_is_set) {
+		return ft_strcmp((const char *) &lhs->full_path, (const char*)&rhs->d_name) > 0;
+	} else if (rhs->full_path_is_set) {
+		return ft_strcmp((const char *) &lhs->d_name, (const char*)&rhs->full_path) > 0;
+	} else {
+		return ft_strcmp((const char *) &lhs->d_name, (const char*)&rhs->d_name) > 0;
+	}
 }
 
 ///if happens name sort in the end
@@ -66,16 +92,29 @@ void quicksort(t_node** nodes, const int begin, const int end, int (*cond)(const
 
 ///function driver which will decide what kind of sort we need
 void sort_nodes(t_node** nodes,
-		  const int begin, const int end, const unsigned int flags) {
+		  const int begin, const int end, const unsigned int flags, const t_exec sort_type) {
 	if (begin >= end)
 		return ;
 	///ifs for specific sort and else is for default name sort
 	if (flags & TIME_SORT) {
 		quicksort(nodes, begin, end,
 			  flags & REVERSE_SORT ? time_sort_dec : time_sort_inc);
-	} else {
-		quicksort(nodes, begin, end,
-			  flags & REVERSE_SORT ? name_sort_dec : name_sort_inc);
+	}
+	/**
+	 	if no specific sort is selected we will sort by name
+		it gets a little bit tricky here
+		if this function is invoked in the LOCAL directory sort
+		it will use d_names as values to compare
+		if this function is invoked in the GLOBAL sort
+		it will use fullpath names firsthand and if they are not defined than it will use d_name
+	 **/
+	else {
+		if (sort_type == LOCAL)
+			quicksort(nodes, begin, end,
+				  flags & REVERSE_SORT ? local_name_sort_dec : local_name_sort_inc);
+		else if (sort_type == GLOBAL)
+			quicksort(nodes, begin, end,
+			 	  flags & REVERSE_SORT ? global_name_sort_dec : global_name_sort_inc);
 	}
 
 }
