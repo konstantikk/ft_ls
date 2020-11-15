@@ -52,10 +52,11 @@ int main(int argc, char** argv) {
 	parse_input(argc, argv, handler);
 	read_nodes(handler);
 	sort_all_nodes(handler);
-	debug_read_nodes(handler, handler->processed_nodes);
+	//debug_read_nodes(handler, handler->processed_nodes);
 	///sort files
 	///display_content();
 	///free_data();
+	output_manager(handler, handler->processed_nodes);
 
 	return (0);
 }
