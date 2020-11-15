@@ -165,5 +165,5 @@ void finish_him();
 
 
 void generate_output(t_handler *handler);
-void output_manager(t_handler *handler);
+void output_manager(t_handler *handler, t_pvec *processed_node);
 #endif //FT_LS_FT_LS_H
