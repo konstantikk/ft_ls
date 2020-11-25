@@ -19,6 +19,7 @@ int find_max(t_pvec * nodes) // TODO useless in next versions
     return (max);
 }
 
+
 void collect_files(t_cvec *output_str, t_node *node, size_t max, int last_flag)
 {
     void    *temp;
@@ -33,31 +34,59 @@ void collect_files(t_cvec *output_str, t_node *node, size_t max, int last_flag)
     ft_memdel(&temp);
 }
 
-void    collect_inf(t_cvec *output_str, t_node *node)
+void    init_list(t_pvec *vec, char *res, int *max)
 {
-    // create buffer for one line and manage string into buffer
-    t_stat st;
-    size_t max;
+    t_cvec *temp;
 
-    stat(node->d_name, &st);
-    ft_printf("%c%s %s %s %s %s %s %s\n", print_type(node->d_type),
-              print_permissions(st.st_mode),
-              ft_itoa(st.st_nlink),
-              getpwuid(st.st_uid)->pw_name,
-              getgrgid(st.st_gid)->gr_name,
-              ft_itoa(st.st_size),
-              print_time(&st.st_mtim.tv_sec),
-              node->d_name);
-    ft_chr_vec_pushback(output_str, print_type(node->d_type));
-    ft_chr_vec_pushback(output_str, print_permissions(st.st_mode));
-    ft_chr_vec_pushback(output_str, ft_itoa(st.st_nlink));
-    ft_chr_vec_pushback(output_str, getpwuid(st.st_uid)->pw_name);
-    ft_chr_vec_pushback(output_str, getgrgid(st.st_gid)->gr_name);
-    ft_chr_vec_pushback(output_str, ft_itoa(st.st_size));
-    ft_chr_vec_pushback(output_str, print_time(&st.st_mtim.tv_sec));
-    ft_chr_vec_pushback(output_str, node->d_name);
+    temp = ft_chr_vec_init(20);
+    ft_chr_vec_pushback(temp, res);
+    ft_ptr_vec_pushback(vec, (void *)temp);
+    if (*max < temp->length)
+        *max = temp->length;
+}
 
+void    collect_inf(t_node *node, t_pvec *vec, int *max)
+{
+    t_stat  st;
+    char    c;
 
+    stat(node->full_path_is_set ? node->full_path : node->d_name, &st);
+    c = print_type(node->d_type);
+    init_list(vec, (char *)&c, &(max[0]));
+    init_list(vec, print_permissions(st.st_mode), &(max[1]));
+    init_list(vec, ft_itoa(st.st_nlink), &(max[2]));
+    init_list(vec, getpwuid(st.st_uid)->pw_name, &(max[3]));
+    init_list(vec, getgrgid(st.st_gid)->gr_name, &(max[4]));
+    init_list(vec, ft_itoa(st.st_size), &(max[5]));
+    init_list(vec, print_time(&st.st_mtim.tv_sec), &(max[6]));
+    init_list(vec, node->d_name, &(max[7]));
+}
+
+void add_to_output(t_cvec *output_str, t_pvec *vec, int *max_list)
+{
+    int     i;
+    void    *temp;
+
+    i = -1;
+    temp = ft_strnew(16);
+    while (++i < vec->length)
+    {
+        if (i % 8 == 2  || i % 8 == 3 || i % 8 == 4 || i % 8 == 5)
+        {
+            ft_chr_vec_pushback(output_str, (char *)ft_memset(temp, ' ',
+                                                              max_list[i % 8] - ((t_cvec *)(vec->data)[i])->length + 2));
+            ft_bzero(temp, 16);
+        }
+        else if (i % 8 == 6 || i % 8 == 7)
+            ft_chr_vec_pushback(output_str, " ");
+        else
+            ;
+        if (i % 8 != 0)
+            ft_chr_vec_pushback(output_str, ((t_cvec *)(vec->data)[i])->data);
+        if (i % 8 == 0 && i != 0)
+            ft_chr_vec_pushback(output_str,"\n");
+    }
+    //ft_chr_vec_pushback(output_str,"\n");
 }
 
 void output_manager(t_handler *handler, t_pvec *processed_nodes)  //TODO Not support Recursive flag
@@ -70,9 +99,14 @@ void output_manager(t_handler *handler, t_pvec *processed_nodes)  //TODO Not sup
     register    size_t i;
     register    size_t j;
     t_cvec      *output_str;
-    size_t      max;
-    int         cond;
+    int      *max_list;
+    int         max;
 
+    int         cond;
+    t_pvec      *vec; // add to struct
+
+    max_list = (int *)ft_memalloc(8 * sizeof(int));
+    vec = ft_ptr_vec_init();
     i = -1;
     output_str = ft_chr_vec_init(1000); // len names of files + white space
     if (handler->flags & LIST)
@@ -84,10 +118,36 @@ void output_manager(t_handler *handler, t_pvec *processed_nodes)  //TODO Not sup
                 NODE(processed_nodes, i)->nodes->length == 0) // TODO check empty dir
                 continue;
             if (!cond) // Directory
-                ;
+            {// total
+                if (processed_nodes->length != 1)
+                {
+                    ft_chr_vec_pushback(output_str,
+                                        NODE(processed_nodes, i)->full_path_is_set ?
+                                        NODE(processed_nodes, i)->full_path : NODE(processed_nodes, i)->d_name);
+                    ft_chr_vec_pushback(output_str, ":\n");
+                    if (NODE(processed_nodes, i)->total > 0)
+                    {
+                        ft_chr_vec_pushback(output_str, "total ");
+                        ft_chr_vec_pushback(output_str, ft_itoa(NODE(processed_nodes, i)->total));
+                        ft_chr_vec_pushback(output_str, "\n");
+                    }
+                }
+                j = -1;
+                ft_bzero(max_list, 8);
+                while (++j < NODE(processed_nodes, i)->nodes->length)
+                {
+                    collect_inf(NODE(NODE(processed_nodes, i)->nodes, j), vec, max_list);
+                }
+                add_to_output(output_str, vec, max_list);
+                if (NODE(processed_nodes, i)->total > 0)
+                    ft_chr_vec_pushback(output_str, "\n");
+                if (i != processed_nodes->length - 1)
+                    ft_chr_vec_pushback(output_str, "\n");
+            }
             else
             {
-                collect_inf(output_str, NODE(processed_nodes, i));
+                collect_inf(NODE(processed_nodes, i), vec, max_list);
+                add_to_output(output_str, vec, max_list);
             }
         }
     }
@@ -122,13 +182,21 @@ void output_manager(t_handler *handler, t_pvec *processed_nodes)  //TODO Not sup
             }
             else
             {
-                max = find_max(processed_nodes); // TODO next version
-                collect_files(output_str, NODE(processed_nodes, i), max,
-                              (i <= processed_nodes->length - 2 &&
-                              (NODE(processed_nodes, i + 1)->nodes != NULL)) ||
-                                          i == processed_nodes->length - 1);
-                if (i <= processed_nodes->length - 2 && (NODE(processed_nodes, i + 1)->nodes != NULL))
+                if (processed_nodes->length != 1)
+                {
+                    max = find_max(processed_nodes); // TODO next version
+                    collect_files(output_str, NODE(processed_nodes, i), max,
+                                  (i <= processed_nodes->length - 2 &&
+                                   (NODE(processed_nodes, i + 1)->nodes != NULL)) ||
+                                  i == processed_nodes->length - 1);
+                    if (i <= processed_nodes->length - 2 && (NODE(processed_nodes, i + 1)->nodes != NULL))
+                        ft_chr_vec_pushback(output_str, "\n");
+                }
+                else
+                {
+                    ft_chr_vec_pushback(output_str, NODE(processed_nodes, i)->d_name);
                     ft_chr_vec_pushback(output_str, "\n");
+                }
             }
         }
     }
