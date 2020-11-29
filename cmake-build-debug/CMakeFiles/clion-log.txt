@@ -1,4 +1,0 @@
-/home/professor/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/gcc-9 -DCMAKE_CXX_COMPILER=/usr/bin/g++-9 -G "CodeBlocks - Unix Makefiles" /home/professor/ft_ls
--- Configuring done
--- Generating done
--- Build files have been written to: /home/professor/ft_ls/cmake-build-debug
