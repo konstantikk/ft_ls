@@ -1,0 +1,4 @@
+/home/professor/ft_ls/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/professor/ft_ls/cmake-build-debug/CMakeFiles/ft_ls.dir
+/home/professor/ft_ls/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/professor/ft_ls/cmake-build-debug/CMakeFiles/tests.dir
