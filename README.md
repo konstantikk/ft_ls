@@ -7,6 +7,6 @@ School 21 (42) project. Implementation bash ls function.
 - getting all data
 
 # next version
-- args and flags parser
-- getting all **necessary** data according to flags
+- [X] args and flags parser
+- [X]  getting all **necessary** data according to flags
 - implement some certain flags
