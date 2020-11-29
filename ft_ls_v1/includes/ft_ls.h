@@ -166,6 +166,12 @@ typedef struct s_handler {
 	size_t global_max_filename_len;
 	///configuration of execution
 	unsigned int flags;
+	///vec for output with l flag
+    t_pvec      *output_vec_util;
+    ///int array for output with l flag
+    int         *output_max_list_util;
+    ///char vector for output
+    t_cvec      *output_str;
 } 				t_handler;
 
 void print_node(const t_dirent* dir);
@@ -182,9 +188,16 @@ size_t get_max_filename_len(t_pvec* nodes, const t_exec max_type);
 void finish_him();
 
 
-void generate_output(t_handler *handler);
 void output_manager(t_handler *handler, t_pvec *processed_node);
 char* print_time(const time_t *time);
 char* print_permissions(mode_t st_mode);
 char print_type(const unsigned char d_type);
+
+int     find_max(t_pvec * nodes);
+void    init_list(t_pvec *vec, char *res, int *max);
+void    collect_inf(t_node *node, t_pvec *vec, int *max);
+void    collect_files(t_cvec *output_str, t_node *node, size_t max, int last_flag);
+void    add_to_output(t_cvec *output_str, t_pvec *vec, int *max_list);
+void    files_processing(t_node *node, t_handler *handler, size_t p_len, size_t i);
+void    directory_processing(t_node *node, t_handler *handler, size_t p_len, size_t i);
 #endif //FT_LS_FT_LS_H
