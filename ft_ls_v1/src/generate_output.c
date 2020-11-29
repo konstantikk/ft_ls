@@ -12,6 +12,7 @@ void collect_files(t_cvec *output_str, t_node *node, size_t max, int last_flag)
     ft_chr_vec_pushback(output_str, node->d_name);
     if (!last_flag)
         ft_chr_vec_pushback(output_str,(char *)ft_memset((void *)temp, ' ',
+
                                               max - node->d_name_len + 1));
     else
         ft_chr_vec_pushback(output_str, "\n");
@@ -74,6 +75,7 @@ void output_manager(t_handler *handler, t_pvec *processed_nodes)
             directory_processing(NODE(processed_nodes, i),handler, processed_nodes->length, i);
         else
             files_processing(NODE(processed_nodes, i), handler, processed_nodes->length, i);
+
     }
     if ((handler->flags & LIST) && handler->output_str->length == 0)
         add_to_output(handler->output_str, handler->output_vec_util, handler->output_max_list_util); // add new line
