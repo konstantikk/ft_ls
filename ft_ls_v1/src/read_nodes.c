@@ -117,5 +117,5 @@ void read_nodes(t_handler* handler) {
 	///get global namelen max
 	handler->global_max_filename_len =
 			get_max_filename_len(handler->processed_nodes, GLOBAL);
-	debug_read_nodes(handler, handler->processed_nodes);
+	//debug_read_nodes(handler, handler->processed_nodes);
 }
