@@ -16,7 +16,6 @@ int find_max(t_pvec * nodes) // TODO useless in next versions
         if (node->d_name_len > max)
             max = node->d_name_len;
     }
-    ft_printf("MAX CHECK found: %d kolya: %d\n", max, node->local_max_filename_len);
     return (max);
 }
 
@@ -174,7 +173,10 @@ void output_manager(t_handler *handler, t_pvec *processed_nodes)  //TODO Not sup
                 j = -1;
                 while (++j < NODE(processed_nodes, i)->nodes->length)
                 {
+
                     max = find_max((t_pvec *)NODE(processed_nodes, i)->nodes); // TODO next version
+                    ft_printf("MAX CHECK found: %d kolya: %d\n", max, NODE(processed_nodes, i)->local_max_filename_len);
+
                     collect_files(output_str, NODE(NODE(processed_nodes, i)->nodes, j), max,
                                   j == NODE(processed_nodes, i)->nodes->length - 1);
                 }
