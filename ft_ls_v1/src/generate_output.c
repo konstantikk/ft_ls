@@ -13,9 +13,10 @@ int find_max(t_pvec * nodes) // TODO useless in next versions
     for (int i=0; i < nodes->length; i++)
     {
         node = (t_node *) (nodes->data[i]);
-        if (node->name_len > max)
-            max = node->name_len;
+        if (node->d_name_len > max)
+            max = node->d_name_len;
     }
+    ft_printf("MAX CHECK found: %d kolya: %d\n", max, node->local_max_filename_len);
     return (max);
 }
 
@@ -25,10 +26,10 @@ void collect_files(t_cvec *output_str, t_node *node, size_t max, int last_flag)
     void    *temp;
 
     ft_chr_vec_pushback(output_str, node->d_name);
-    temp = ft_strnew(max - node->name_len + 1); // TODO how did not use malloc? or use malloc once
+    temp = ft_strnew(max - node->d_name_len + 1); // TODO how did not use malloc? or use malloc once
     if (!last_flag)
         ft_chr_vec_pushback(output_str,(char *)ft_memset(temp, ' ',
-                                              max - node->name_len + 1));
+                                              max - node->d_name_len + 1));
     else
         ft_chr_vec_pushback(output_str, "\n");
     ft_memdel(&temp);
@@ -185,6 +186,7 @@ void output_manager(t_handler *handler, t_pvec *processed_nodes)  //TODO Not sup
                 if (processed_nodes->length != 1)
                 {
                     max = find_max(processed_nodes); // TODO next version
+                    ft_printf("GENERAL MAX: found: %d Kolya: %d\n", max, handler->global_max_filename_len);
                     collect_files(output_str, NODE(processed_nodes, i), max,
                                   (i <= processed_nodes->length - 2 &&
                                    (NODE(processed_nodes, i + 1)->nodes != NULL)) ||
