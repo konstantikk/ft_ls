@@ -31,17 +31,17 @@ void    init_list(t_pvec *vec, char *res, int *max)
 
 void    collect_inf(t_node *node, t_pvec *vec, int *max)
 {
-    t_stat  st;
+    //t_stat  st;
     char    c;
 
-    stat(node->full_path_is_set ? node->full_path : node->d_name, &st);
-    c = print_type(node->d_type);
+    //stat(node->full_path_is_set ? node->full_path : node->d_name, &st); // deprecated
+    c = print_type(node->d_type); // st_mode
     init_list(vec, (char *)&c, &(max[0]));
-    init_list(vec, print_permissions(st.st_mode), &(max[1]));
-    init_list(vec, ft_itoa(st.st_nlink), &(max[2]));
-    init_list(vec, getpwuid(st.st_uid)->pw_name, &(max[3]));
-    init_list(vec, getgrgid(st.st_gid)->gr_name, &(max[4]));
-    init_list(vec, ft_itoa(st.st_size), &(max[5]));
-    init_list(vec, print_time(&st.st_mtim.tv_sec), &(max[6]));
+    init_list(vec, print_permissions(node->st_mode), &(max[1]));
+    init_list(vec, ft_itoa(node->st_nlink), &(max[2]));
+    init_list(vec, getpwuid(node->st_uid)->pw_name, &(max[3]));
+    init_list(vec, getgrgid(node->st_gid)->gr_name, &(max[4]));
+    init_list(vec, ft_itoa(node->st_size), &(max[5]));
+    init_list(vec, print_time(&(node->st_mtim.tv_sec)), &(max[6]));
     init_list(vec, node->d_name, &(max[7]));
 }
