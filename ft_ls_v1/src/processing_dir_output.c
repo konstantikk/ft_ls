@@ -18,7 +18,7 @@ void    add_total(t_node *node, t_cvec *output_str)
 
 void dir_header(t_node *node,t_handler *handler, size_t p_len)
 {
-    if (p_len != 1 || (node->total > 0 && (handler->flags & LIST)))
+    if (p_len != 1)
         add_dir_name(node, handler->output_str);
     if (node->total > 0 && (handler->flags & LIST))
         add_total(node, handler->output_str);
