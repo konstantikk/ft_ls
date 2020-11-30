@@ -16,9 +16,10 @@ void    add_total(t_node *node, t_cvec *output_str)
     ft_chr_vec_pushback(output_str, "\n");
 }
 
-void more_then_1_file(t_node *node,t_handler *handler)
+void dir_header(t_node *node,t_handler *handler, size_t p_len)
 {
-    add_dir_name(node, handler->output_str);
+    if (p_len != 1 || (node->total > 0 && (handler->flags & LIST)))
+        add_dir_name(node, handler->output_str);
     if (node->total > 0 && (handler->flags & LIST))
         add_total(node, handler->output_str);
 }
@@ -27,8 +28,7 @@ void    directory_processing(t_node *node, t_handler *handler, size_t p_len, siz
 {
     register size_t j;
 
-    if (p_len != 1)
-        more_then_1_file(node, handler);
+    dir_header(node, handler, p_len);
     ft_bzero(handler->output_max_list_util, 8); // TODO maybe clear list not here??
     j = -1;
     while (++j < node->nodes->length)
