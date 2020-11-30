@@ -61,6 +61,7 @@ char* print_time(const time_t *time) {
 	char *str_time;
 
 	str_time = ctime(time);
+	str_time += 4; //scip Www format (which day of the week)
 	str_time[ft_strlen(str_time) - NO_NEWLINE_AND_SECS] = '\0';
 	return str_time;
 }
