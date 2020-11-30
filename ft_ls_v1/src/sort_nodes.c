@@ -6,12 +6,12 @@
 
 ///increasing order
 int time_sort_inc(const t_node* lhs, const t_node* rhs) {
-	return lhs->st_mtim.tv_sec < rhs->st_mtim.tv_sec;
+	return lhs->st_mtim.tv_sec > rhs->st_mtim.tv_sec;
 }
 
 ///decreasing order order
 int time_sort_dec(const t_node* lhs, const t_node* rhs) {
-	return lhs->st_mtim.tv_sec > rhs->st_mtim.tv_sec;
+	return lhs->st_mtim.tv_sec < rhs->st_mtim.tv_sec;
 }
 
 ///increasing order
