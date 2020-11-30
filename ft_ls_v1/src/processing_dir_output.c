@@ -38,7 +38,7 @@ void    directory_processing(t_node *node, t_handler *handler, size_t p_len, siz
                         handler->output_max_list_util);
         else
             collect_files(handler->output_str, NODE(node->nodes, j),
-                          find_max((t_pvec *)node->nodes),
+                          node->local_max_filename_len,
                           j == node->nodes->length - 1); // TODO MAX in struct
     }
     if (handler->flags & LIST)

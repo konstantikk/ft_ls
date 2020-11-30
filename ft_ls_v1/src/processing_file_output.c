@@ -13,7 +13,7 @@ void files_processing(t_node *node, t_handler *handler, size_t p_len, size_t i)
     }
     if (p_len != 1)
     {
-        collect_files(handler->output_str, node, find_max(handler->processed_nodes),
+        collect_files(handler->output_str, node, handler->global_max_filename_len,
                       (i <= p_len - 2 &&
                        (NODE(handler->processed_nodes, i + 1)->nodes != NULL))
                       || i == p_len - 1);

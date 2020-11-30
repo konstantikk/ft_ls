@@ -48,6 +48,7 @@ static size_t get_max(t_node** nodes, size_t len,  void (*cond)(const t_node*, s
 	size_t max_len;
 
 	i = 0;
+	max_len = 0;
 	while(i < len) {
 		cond(nodes[i], &max_len);
 		++i;
