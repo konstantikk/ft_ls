@@ -18,3 +18,4 @@ School 21 (42) project. Implementation bash ls function.
 - [ ] print d_type for output with flag -l
 - [X] dont recount max for each files in folder
 - [X] scip Www (which day of the week) format in date. `Jan 11 12:09`
+- [ ] `-rw-r--r--  1 analytics analytics    840084 Mar 11  2019 profileid_6638.tsv` print year instead time for old files
