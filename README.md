@@ -17,4 +17,4 @@ School 21 (42) project. Implementation bash ls function.
 - [X] should add new line for some cases
 - [ ] print d_type for output with flag -l
 - [X] dont recount max for each files in folder
-
+- [X] scip Www (which day of the week) format in date. `Jan 11 12:09`
