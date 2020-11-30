@@ -64,17 +64,3 @@ char* print_time(const time_t *time) {
 	str_time[ft_strlen(str_time) - NO_NEWLINE_AND_SECS] = '\0';
 	return str_time;
 }
-
-void print_node(const t_dirent* dir) {
-	t_stat st;
-
-	stat(dir->d_name, &st);
-	ft_printf("%c%s %d %s %s %d %s %s\n", print_type(dir->d_type),
-		   					 print_permissions(st.st_mode),
-		   					 st.st_nlink,
-		   					 getpwuid(st.st_uid)->pw_name,
-		   					 getgrgid(st.st_gid)->gr_name,
-		   					 st.st_size,
-		   					 print_time(&st.st_mtim.tv_sec),
-		   					 dir->d_name);
-}
