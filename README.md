@@ -14,7 +14,7 @@ School 21 (42) project. Implementation bash ls function.
 # TODO
 - [ ] `total`  should be divided in half (on mac value is valid)
 - [X] print `total` for one folder
-- [ ] should add new line for some cases
+- [X] should add new line for some cases
 - [ ] print d_type for output with flag -l
 - [X] dont recount max for each files in folder
 
