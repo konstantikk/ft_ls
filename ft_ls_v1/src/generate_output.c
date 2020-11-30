@@ -60,7 +60,7 @@ void output_manager(t_handler *handler, t_pvec *processed_nodes)
     while (++i < processed_nodes->length)
     {
         cond = NODE(processed_nodes, i)->nodes == NULL;
-        if (i > 1 && !cond && NODE(processed_nodes, i - 1)->nodes == NULL
+        if (i > 0 && !cond && NODE(processed_nodes, i - 1)->nodes == NULL
         && (handler->flags & LIST))
         {
             add_to_output(handler->output_str, handler->output_vec_util, handler->output_max_list_util);
