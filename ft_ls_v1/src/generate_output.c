@@ -64,7 +64,7 @@ void output_manager(t_handler *handler, t_pvec *processed_nodes)
         && (handler->flags & LIST))
         {
             add_to_output(handler->output_str, handler->output_vec_util, handler->output_max_list_util);
-            ft_chr_vec_pushback(handler->output_str,"\n");
+            ft_chr_vec_pushback(handler->output_str,"\n\n");
 
         }
 
@@ -78,7 +78,10 @@ void output_manager(t_handler *handler, t_pvec *processed_nodes)
 
     }
     if ((handler->flags & LIST) && handler->output_str->length == 0)
+    {
         add_to_output(handler->output_str, handler->output_vec_util, handler->output_max_list_util); // add new line
+        ft_chr_vec_pushback(handler->output_str,"\n");
+    }
     write(1, handler->output_str->data, handler->output_str->length);
     //TODO FREE all
 }
