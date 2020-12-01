@@ -19,7 +19,7 @@ void get_file(t_handler* handler, const char* file_name, t_stat* st) {
 	if (!(handler->flags & ALL_NODES) && file_name[0] == '.')
 		return ;
 	///in files which came as args the type is in st
-	node_content = init_node(file_name, st_mode2d_type(st->st_mode));
+	node_content = init_node("", file_name, st_mode2d_type(st->st_mode));
 
 	///get additional info
 	if (handler->flags & LIST || handler->flags & TIME_SORT) {
@@ -41,18 +41,21 @@ void get_dir(t_handler* handler, const char* dir_name, t_stat* st) {
 
 
 	///init and copy name; here will come readlinked dir name
-	dir = init_node(dir_name, st_mode2d_type(st->st_mode));
+	dir = init_node("", dir_name, st_mode2d_type(st->st_mode));
 	///copy st needed fields
 	copy_info(dir, st);
 	while ((node_content = readdir(ptr)) != NULL) {
 		if (!(handler->flags & ALL_NODES) && node_content->d_name[0] == '.')
 			continue ;
-		ft_ptr_vec_pushback(dir->nodes, init_node(node_content->d_name, node_content->d_type));
+		ft_ptr_vec_pushback(dir->nodes, init_node(dir->d_name,
+											      node_content->d_name,
+											      node_content->d_type));
 
 		///get additional info
 		if (handler->flags & LIST || handler->flags & TIME_SORT) {
 			///stat work only with full paths
-			set_fullpath(CURRENT_NODE, dir->d_name, node_content->d_name);
+			if (!CURRENT_NODE->full_path_is_set)
+				set_fullpath(CURRENT_NODE, dir->d_name, node_content->d_name);
 			get_node_info(CURRENT_NODE);
 			dir->total += CURRENT_NODE->st_blocks;
 		}

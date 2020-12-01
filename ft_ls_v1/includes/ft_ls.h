@@ -105,6 +105,12 @@ typedef struct s_node {
 
 	///custom
 	char full_path[MAX_FILENAME_SIZE];
+	///when readlink is happening this is where the result SHOULD be placed
+	///so for symbolic links there will be 3 names:
+	///										local link_name
+	///										global link_name
+	///										where link links to
+	char links_to[MAX_FILENAME_SIZE];
 	///in some cases we need to know if full path is set thats why I added
 	///this bool var for easy access and no heuristic
 	///like checking first element of the char array
@@ -181,8 +187,8 @@ void sort_nodes(t_node** nodes, const int begin, const int end, unsigned int fla
 void copy_info(t_node* node, t_stat* st);
 void get_node_info(t_node* node);
 void debug_read_nodes(t_handler* handler, t_pvec* processed_nodes);
-t_node* init_node(const char* node_name, unsigned char d_type);
-t_node* init_node_and_get_info(const char* node_name, unsigned char d_type);
+t_node* init_node(const char* prefix, const char* node_name, unsigned char d_type);
+t_node* init_node_and_get_info(const char* prefix, const char* node_name, unsigned char d_type);
 void set_fullpath(t_node* node, const char* prefix, const char* node_name);
 size_t get_max_filename_len(t_pvec* nodes, const t_exec max_type);
 unsigned char st_mode2d_type(__mode_t mode);

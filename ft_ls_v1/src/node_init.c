@@ -28,19 +28,22 @@ void get_node_info(t_node* node) {
 ///may expand
 ///readlink should happen in init node
 ///thats why full path is needed here
-t_node* init_node(const char* node_name, unsigned char d_type) {
+t_node* init_node(const char* prefix, const char* node_name, unsigned char d_type) {
 	t_node* node;
 
 	if (!(node = ft_memalloc(sizeof(t_node))))
 		finish_him();
 	node->d_type = d_type;
+	ft_memcpy(node->d_name, node_name, MAX_FILENAME_SIZE);
 	if (d_type == DT_LNK)
 	{
-		if (readlink(node_name, node->d_name, MAX_FILENAME_SIZE) == -1)
+		///if we have a symbolic link d_name will save local link name
+		///full_path will save global link name
+		///and readlink from global link name will be saved in links_to
+		set_fullpath(node, prefix, node_name);
+		if (readlink(node->full_path, node->links_to, MAX_FILENAME_SIZE) == -1)
 			finish_him();
 	}
-	else
-		ft_memcpy(node->d_name, node_name, MAX_FILENAME_SIZE);
 	if (d_type == DT_DIR) {
 		node->nodes = ft_ptr_vec_init();
 	}
@@ -48,10 +51,10 @@ t_node* init_node(const char* node_name, unsigned char d_type) {
 	return node;
 }
 
-t_node* init_node_and_get_info(const char* node_name, unsigned char d_type) {
+t_node* init_node_and_get_info(const char* preifx, const char* node_name, unsigned char d_type) {
 	t_node* node;
 
-	node = init_node(node_name, d_type);
+	node = init_node(preifx, node_name, d_type);
 	get_node_info(node);
 	return node;
 }

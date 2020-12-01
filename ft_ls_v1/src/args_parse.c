@@ -104,5 +104,5 @@ void parse_input(int argc, char** argv, t_handler *handler) {
 	if (handler->input_nodes->length == 0)
 		ft_ptr_vec_pushback(handler->input_nodes, CURRENT_DIR);
 
-//	debug_parser(handler);
+	//debug_parser(handler);
 }

@@ -6,15 +6,17 @@
 void set_fullpath(t_node* node, const char* prefix, const char* node_name) {
 	const size_t len_prefix = ft_strlen(prefix);
 	const size_t len_node_name = ft_strlen(node_name);
-
+	int cond;
 	///strnew creates len + 1 elem for '\0'
 	///we need additional symbol for '/' thats why we pass to strnew +1
 	ft_memcpy(node->full_path, prefix, len_prefix * sizeof(char));
 	///put slash
-	node->full_path[len_prefix] = '/';
+	cond = len_prefix && prefix[len_prefix - 1] != '/';
+	if (cond)
+		node->full_path[len_prefix] = '/';
 	///copy rest
 	///because we dont want to override new symbol '\' which is placed at the position len_prefix + 1
-	ft_memcpy(node->full_path + (len_prefix + 1), node_name, len_node_name * sizeof(char));
+	ft_memcpy(node->full_path + (len_prefix + cond), node_name, len_node_name * sizeof(char));
 	///set bool variable that full path is set for easy access
 
 	node->full_path_len = ft_strlen(node->full_path); ///full_path len
