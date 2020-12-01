@@ -27,7 +27,7 @@ char print_type(const unsigned char d_type) {
 
 	if (d_type < MAX_TYPES_NUM)
 		return d_types[d_type];
-	return '\b';
+	return '\0';
 }
 
 void get_one_user_permissions(const unsigned int perms, const int pos, char* permissions) {

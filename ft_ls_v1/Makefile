@@ -1,6 +1,6 @@
 COMPILER = gcc
 CHECK_FLAGS = -Wall -Wextra #-Werror
-NAME = ft_ls_v1
+NAME = ft_ls
 ADD_SRC = ./src/
 RESOURCES = main.c print_nodes.c args_parse.c read_nodes.c node_init.c sort_nodes.c utils.c generate_output.c\
 			processing_dir_output.c processing_file_output.c output_utils.c

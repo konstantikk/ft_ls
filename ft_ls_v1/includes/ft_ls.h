@@ -185,6 +185,7 @@ t_node* init_node(const char* node_name, unsigned char d_type);
 t_node* init_node_and_get_info(const char* node_name, unsigned char d_type);
 void set_fullpath(t_node* node, const char* prefix, const char* node_name);
 size_t get_max_filename_len(t_pvec* nodes, const t_exec max_type);
+unsigned char st_mode2d_type(__mode_t mode);
 void finish_him();
 
 

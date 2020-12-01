@@ -19,7 +19,7 @@ void get_file(t_handler* handler, const char* file_name, t_stat* st) {
 	if (!(handler->flags & ALL_NODES) && file_name[0] == '.')
 		return ;
 	///in files which came as args the type is in st
-	node_content = init_node(file_name, S_ISLNK(st->st_mode) ? DT_LNK : 0);
+	node_content = init_node(file_name, st_mode2d_type(st->st_mode));
 
 	///get additional info
 	if (handler->flags & LIST || handler->flags & TIME_SORT) {
@@ -41,7 +41,7 @@ void get_dir(t_handler* handler, const char* dir_name, t_stat* st) {
 
 
 	///init and copy name; here will come readlinked dir name
-	dir = init_node(dir_name, S_ISDIR(st->st_mode) ? DT_DIR : DT_LNK);
+	dir = init_node(dir_name, st_mode2d_type(st->st_mode));
 	///copy st needed fields
 	copy_info(dir, st);
 	while ((node_content = readdir(ptr)) != NULL) {
@@ -60,7 +60,7 @@ void get_dir(t_handler* handler, const char* dir_name, t_stat* st) {
 		if ((handler->flags & RECURSIVE) &&
 				 ft_strcmp(node_content->d_name, "..") &&
 				 ft_strcmp(node_content->d_name, ".") &&
-		(CURRENT_NODE->d_type == DT_LNK || CURRENT_NODE->d_type == DT_DIR)) {
+				 CURRENT_NODE->d_type == DT_DIR) {
 			if (!CURRENT_NODE->full_path_is_set)
 				set_fullpath(CURRENT_NODE, dir->d_name, node_content->d_name);
 			ft_ptr_vec_pushback(handler->input_nodes, &CURRENT_NODE->full_path);
@@ -111,7 +111,7 @@ void read_nodes(t_handler* handler) {
  		* NOTE: function stat return node type is var st_mode
  		* so we can identify what came to us
  		*/
-		 S_ISDIR(st.st_mode) || S_ISLNK(st.st_mode) ?
+		 S_ISDIR(st.st_mode) ?
 		 	get_dir(handler, node_name, &st) : get_file(handler, node_name, &st);
 	}
 	///get global namelen max

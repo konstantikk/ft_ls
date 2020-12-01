@@ -22,6 +22,28 @@ void set_fullpath(t_node* node, const char* prefix, const char* node_name) {
 	node->full_path_is_set = 1;
 }
 
+/**
+ * in case when we are reading from input nodes stat() st st.st_mode
+ * but not d_type which is used for output
+ * need to create mapping from st_mode to d_type
+ */
+
+unsigned char st_mode2d_type(const __mode_t mode) {
+	if (S_ISDIR(mode)) {
+		return DT_DIR;
+	} else if (S_ISCHR(mode)) {
+		return DT_CHR;
+	} else if (S_ISBLK(mode)) {
+		return DT_BLK;
+	} else if (S_ISREG(mode)) {
+		return DT_REG;
+	} else if (S_ISFIFO(mode)) {
+		return DT_FIFO;
+	} else if (S_ISLNK(mode)) {
+		return DT_LNK;
+	}
+	return 0;
+}
 
 /**
  * we've got names in two forms: local and global

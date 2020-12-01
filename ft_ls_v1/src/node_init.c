@@ -27,22 +27,22 @@ void get_node_info(t_node* node) {
 
 ///may expand
 ///readlink should happen in init node
+///thats why full path is needed here
 t_node* init_node(const char* node_name, unsigned char d_type) {
 	t_node* node;
 
 	if (!(node = ft_memalloc(sizeof(t_node))))
 		finish_him();
+	node->d_type = d_type;
 	if (d_type == DT_LNK)
 	{
 		if (readlink(node_name, node->d_name, MAX_FILENAME_SIZE) == -1)
 			finish_him();
 	}
 	else
-
 		ft_memcpy(node->d_name, node_name, MAX_FILENAME_SIZE);
-	if (d_type == DT_DIR || d_type == DT_LNK) {
+	if (d_type == DT_DIR) {
 		node->nodes = ft_ptr_vec_init();
-		node->d_type = d_type;
 	}
 	node->d_name_len = ft_strlen(node->d_name); ///d_name len
 	return node;
