@@ -8,7 +8,7 @@ void collect_files(t_cvec *output_str, t_node *node, size_t max, int last_flag)
 {
     char    temp[max - node->d_name_len + 1];
 
-    ft_bzero((void *)temp,max - node->d_name_len + 1);
+    ft_bzero((void *)temp,max - node->d_name_len + 2);
     ft_chr_vec_pushback(output_str, node->d_name);
     if (!last_flag)
         ft_chr_vec_pushback(output_str,(char *)ft_memset((void *)temp, ' ',
