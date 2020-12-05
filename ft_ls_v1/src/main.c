@@ -35,7 +35,6 @@ t_handler* init_handler(void) {
 void sort_all_nodes(t_handler* handler) {
 	sort_nodes(handler->processed_nodes->data,
 			0, handler->files_num - 1, handler->flags, GLOBAL);
-	///sort dirs right now sort is happening by d_name FIXME
 	sort_nodes(handler->processed_nodes->data,
 			   handler->files_num, handler->processed_nodes->length - 1, handler->flags, GLOBAL);
 }

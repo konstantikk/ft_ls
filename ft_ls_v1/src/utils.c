@@ -15,7 +15,7 @@ void set_fullpath(t_node* node, const char* prefix, const char* node_name) {
 	if (cond)
 		node->full_path[len_prefix] = '/';
 	///copy rest
-	///because we dont want to override new symbol '\' which is placed at the position len_prefix + 1
+	///because we dont want to override new symbol '/' which is placed at the position len_prefix + 1
 	ft_memcpy(node->full_path + (len_prefix + cond), node_name, len_node_name * sizeof(char));
 	///set bool variable that full path is set for easy access
 
