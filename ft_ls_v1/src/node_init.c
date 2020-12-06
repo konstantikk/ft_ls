@@ -32,7 +32,7 @@ t_node* init_node(const char* prefix, const char* node_name, unsigned char d_typ
 	t_node* node;
 
 	if (!(node = ft_memalloc(sizeof(t_node))))
-		finish_him();
+		return NULL;
 	node->d_type = d_type;
 	ft_memcpy(node->d_name, node_name, MAX_FILENAME_SIZE);
 	if (d_type == DT_LNK)
@@ -42,7 +42,7 @@ t_node* init_node(const char* prefix, const char* node_name, unsigned char d_typ
 		///and readlink from global link name will be saved in links_to
 		set_fullpath(node, prefix, node_name);
 		if (readlink(node->full_path, node->links_to, MAX_FILENAME_SIZE) == -1)
-			finish_him();
+			return NULL;
 	}
 	if (d_type == DT_DIR) {
 		node->nodes = ft_ptr_vec_init();
@@ -51,10 +51,10 @@ t_node* init_node(const char* prefix, const char* node_name, unsigned char d_typ
 	return node;
 }
 
-t_node* init_node_and_get_info(const char* preifx, const char* node_name, unsigned char d_type) {
+t_node* init_node_and_get_info(const char* prefix, const char* node_name, unsigned char d_type) {
 	t_node* node;
 
-	node = init_node(preifx, node_name, d_type);
+	node = init_node(prefix, node_name, d_type);
 	get_node_info(node);
 	return node;
 }

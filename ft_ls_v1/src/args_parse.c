@@ -56,7 +56,11 @@ static void parse_flags(char* argv, size_t size, t_handler* handler) {
 		shift = flag_table_lookup(argv[i]);
 		if (shift != 0)
 			handler->flags |= (1u << shift);
-		///else error
+		else {
+			error_manager(&argv[i], NO_OPTION);
+			///freeing should be happening
+			exit(-1);
+		}
 		++i;
 	}
 }

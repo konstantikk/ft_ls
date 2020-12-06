@@ -92,6 +92,29 @@ size_t get_max_filename_len(t_pvec* nodes,  const t_exec max_type) {
 	return max_len;
 }
 
+///inv piece - invalid piece
+///malloc error will be set in errno
+void error_manager(const char* inv_piece, t_exec error_type) {
+	t_cvec *err_msg;
+
+	err_msg = ft_chr_vec_init(20);
+	ft_chr_vec_pushback(err_msg, "ls: ");
+	if (error_type == NO_OPTION) {
+		ft_chr_vec_pushback(err_msg, "invalid option -- '");
+		ft_chr_vec_pushback(err_msg, (char*)inv_piece);
+		ft_chr_vec_pushback(err_msg, "'\nTry 'ft_ls -h' for more information\n");
+		///we dont need errno message here
+		ft_putstr_fd(err_msg->data, 2);
+		return ;
+	} else if (error_type == CANT_OPEN) {
+		ft_chr_vec_pushback(err_msg, "cannot access '");
+		ft_chr_vec_pushback(err_msg, (char*)inv_piece);
+		ft_chr_vec_pushback(err_msg, "'");
+	}
+	perror(err_msg->data);
+	ft_chr_vec_del(&err_msg);
+}
+
 ///debug
 
 static void debug_output_content_one(t_node* node) {

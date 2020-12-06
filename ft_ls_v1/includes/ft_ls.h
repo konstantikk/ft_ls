@@ -62,7 +62,9 @@ typedef struct stat	  t_stat;
 ///in case we will need more execution enums to make our lives easier
 typedef enum e_exec {
 	LOCAL,
-	GLOBAL
+	GLOBAL,
+	NO_OPTION,
+	CANT_OPEN
 } 			 t_exec;
 
 
@@ -193,6 +195,7 @@ void set_fullpath(t_node* node, const char* prefix, const char* node_name);
 size_t get_max_filename_len(t_pvec* nodes, const t_exec max_type);
 unsigned char st_mode2d_type(__mode_t mode);
 void finish_him();
+void error_manager(const char* inv_piece, t_exec error_type);
 
 
 void output_manager(t_handler *handler, t_pvec *processed_node);

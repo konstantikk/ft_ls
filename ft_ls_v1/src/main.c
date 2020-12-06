@@ -5,7 +5,7 @@
 #include "ft_ls.h"
 
 void finish_him() {
-	perror(strerror(errno));
+	perror("ls: ");
 	exit(-1);
 }
 
@@ -51,11 +51,8 @@ int main(int argc, char** argv) {
 	parse_input(argc, argv, handler);
 	read_nodes(handler);
 	sort_all_nodes(handler);
-	//debug_read_nodes(handler, handler->processed_nodes);
-	///sort files
-	///display_content();
-	///free_data();
 	output_manager(handler, handler->processed_nodes);
+	///free_data();
 
 	return (0);
 }

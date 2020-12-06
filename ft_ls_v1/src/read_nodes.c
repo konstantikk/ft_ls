@@ -36,9 +36,6 @@ void get_dir(t_handler* handler, const char* dir_name, t_stat* st) {
 	t_node *dir;
 
 	ptr = opendir(dir_name);
-	if (ptr == NULL)
-		finish_him();
-
 
 	///init and copy name; here will come readlinked dir name
 	dir = init_node("", dir_name, st_mode2d_type(st->st_mode));
@@ -79,8 +76,7 @@ void get_dir(t_handler* handler, const char* dir_name, t_stat* st) {
 	///push processed dir to processed nodes
 	ft_ptr_vec_pushback(handler->processed_nodes, dir);
 
-	if (closedir(ptr) == -1)
-		finish_him();
+	closedir(ptr);
 }
 
 
@@ -106,9 +102,9 @@ void read_nodes(t_handler* handler) {
 		 * if it is a dir -> 2 way -> get dir = {readlink{name}, s_nodes*, total} -> sort(dir)
 		 */
 		if (stat(node_name, &st) == -1) {
-		 	///need to work this out correctly if we have multiple inputs
-		 	/// it WONT stop if one of the nodes doesnt exist
-		 	finish_him();
+		 	///should be an error message and continue
+		 	error_manager(node_name, CANT_OPEN);
+			continue ;
 		}
 		/**
  		* NOTE: function stat return node type is var st_mode
