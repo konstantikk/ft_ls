@@ -44,6 +44,11 @@ void add_to_output(t_cvec *output_str, t_pvec *vec, int *max_list)
             ft_chr_vec_pushback(output_str, elem->data);
         if (i % 8 == 0 && i != 0)
             ft_chr_vec_pushback(output_str,"\n");
+        if (i % 8 == 0)
+        {
+            elem->data[1] = '\0';
+            ft_chr_vec_pushback(output_str, elem->data);
+        }
     }
     //ft_chr_vec_pushback(output_str,"\n");
 }
