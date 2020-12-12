@@ -105,6 +105,7 @@ void read_nodes(t_handler* handler) {
 		 	///should be an error message and continue
 		 	error_manager(node_name, CANT_OPEN);
 			continue ;
+
 		}
 		/**
  		* NOTE: function stat return node type is var st_mode

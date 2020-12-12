@@ -58,6 +58,7 @@
 
 typedef struct dirent t_dirent;
 typedef struct stat	  t_stat;
+typedef struct tm     t_full_time;
 
 ///in case we will need more execution enums to make our lives easier
 typedef enum e_exec {

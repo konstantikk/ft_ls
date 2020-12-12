@@ -57,11 +57,24 @@ char* print_permissions(mode_t st_mode) {
 	return permissions;
 }
 
-char* print_time(const time_t *time) {
-	char *str_time;
+char* print_time(const time_t *ttime)
+{
+	char        *str_time;
+    t_full_time tm;
+    t_full_time tm_now;
+    time_t      now;
 
-	str_time = ctime(time);
-	str_time += 4; //scip Www format (which day of the week)
+	str_time = ctime(ttime);
+	now = time(NULL);
+    tm = *localtime(ttime);
+    tm_now = *localtime(&now);
+    str_time += 4; //scip Www format (which day of the week)
+    if (tm.tm_year < tm_now.tm_year) // TODO
+    {
+        str_time[ft_strlen(str_time) - NO_NEWLINE_AND_SECS - 4] = '\0';
+        str_time[ft_strlen(str_time) - 1] = ' ';
+        return ft_strjoin(str_time, ft_itoa(tm.tm_year + 1900)); // TODO
+    }
 	str_time[ft_strlen(str_time) - NO_NEWLINE_AND_SECS] = '\0';
 	return str_time;
 }
